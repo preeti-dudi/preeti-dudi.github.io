@@ -58,6 +58,9 @@ aside .bttn{
     margin:10px;
     box-shadow:0px 0px 10px 0px white;
 }
+#map-container{
+    margin:80px 100px
+}
 .heading{
     font:italic bold 4rem Tangerine;
 }
@@ -112,7 +115,6 @@ h1{
 table{font-weight: 400;margin:auto;}
 a{font-size:20px;} 
 .footer{
-    position:relative;
     align-items:center;
     height:210px;
     color:white;
@@ -175,6 +177,12 @@ a{font-size:20px;}
 }
 .see{
     font-size:1.2rem
+}
+#map-container{
+    margin:8px;}
+#map-container iframe{
+    width:98%;
+    height:400px;
 }
 }
 @media (min-width: 576px) {
