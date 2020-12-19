@@ -44,22 +44,26 @@
     
     <div class="gallery">
         <div class="image">
-           <i class="fa fa-arrow-circle-left"></i>
-           <img src="" alt="help" width="80%" border="2px solid darkcyan" height="400px">
-           <i class="fa fa-arrow-circle-right"></i>
+           <i class="fa fa-arrow-circle-left" onclick="prev()"></i>
+           <img src="assets/images/1.jpg" id="image" alt="help" width="80%" style="border:2px solid darkcyan" height="400px">
+           <i class="fa fa-arrow-circle-right" onclick="next()"></i>
                 
         </div>
     </div>
     
     
-<footer class="footer" class="row">
-    <div id="address" class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-4">
+<footer class="footer">
+    <div class="row">
+    <div class="col-md-4 col-lg-4 col-xl-4 col-sm-4 col-4">
+        <p id="address">
         wearehere.org<br>
         Helpline:xxxxxxxxxx<br>
         Address Main Branch<br>
         233-A, CP,Delhi,India
+        </p>
     </div>    
-   <table class="col-md-8 col-lg-8 col-xl-8 col-sm-8 col-8"> 
+   <div class="col-md-8 col-lg-8 col-xl-8 col-sm-8 col-8"> 
+       <table>
       <tr>
           <td colspan="2"><h1>CONTACT</h1></td>
       </tr>   
@@ -88,6 +92,8 @@
            </label>
        </tr>
    </table>
+   </div>
+   </div>
 </footer>
 
 <div class="footer-widget">
