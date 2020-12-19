@@ -9,13 +9,10 @@ body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/
 }
 #primary-nav,#impact,.Card,.newspost{
     box-shadow:inset 0px 0px 10px 0px white, 4px 4px 8px 0px darkcyan;
-    background:linear-gradient(rgba(0,50,50,0.7525),rgba(0,250,250,0.525)), url(assets/images/blueBg1.jpg) center/cover;
+    background:linear-gradient(rgba(0,70,70,0.7525),rgba(0,50,50,0.525)), url(assets/images/blueBg1.jpg) center/cover;
     width:100%;
     margin:50PX auto 50px auto;
     padding:10px;
-}
-#address{
-    color:grey;
 }
 #primary-nav{
     margin-bottom:0px;
@@ -30,6 +27,11 @@ body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/
     height:50px;
 }
 
+#tagline .container {
+    border:10px double white;
+    margin:10px auto 10px;
+    height:550px;
+}
 aside{
     position:fixed;
     top:85%;
@@ -57,6 +59,9 @@ aside .bttn{
     width:90%;
     margin:10px;
     box-shadow:0px 0px 10px 0px white;
+}
+#address{
+    color:grey;
 }
 #map-container{
     margin:80px 100px
@@ -92,15 +97,13 @@ h1{
     text-shadow:4px 4px 6px darkcyan;
 }
 
-.news,.gallery,.image,.footer{
-    display:flex;
-    justify-content: space-around;
+,.gallery,.image,{
     width:100%;
     height:500px;
-    align-items: center;
 }
 .newspost{
-    width:30%;
+    width:90%;
+    margin:4%;
     height:400px;
 }
 .image i{
@@ -146,10 +149,6 @@ a{font-size:20px;}
     font-size:35px;
     font-weight:100;
 }
-#about-us{
-    height: auto;
-    position: relative;
-}
 #title{
     font-size:38px;
     font-weight:900;
@@ -163,14 +162,12 @@ a{font-size:20px;}
     max-width: 540px;
   }
 #tagline{
-    font-size:1.2rem;
+    font-size:1.4rem;
     background-size:cover;
     height:340px;
 }
 #tagline .container {
-    border:10px double white;
-    margin:10px auto 10px;
-    height:350px;
+    height:380px;
 }
  #impact{
     font-size:1.2rem;
@@ -190,19 +187,14 @@ a{font-size:20px;}
 }
 
 @media (min-width: 768px) {
-.container {
-    max-width: 720px; background-size:cover;
-    height:350px;
-}
 #tagline{font-size:1.5rem;}
 }
 
 @media (min-width: 992px) {
-.container {
-    max-width: 960px;
-  }
-#tagline{font-size:1.8rem; background-size:cover;
-        height:400px;
+#tagline{
+    font-size:1.8rem; 
+    background-size:cover;
+    height:400px;
 }
 a:hover,.bttn:hover{
     cursor: pointer; 
@@ -221,23 +213,19 @@ a:hover,.bttn:hover{
 @keyframes enlarge{
     to{transform:scale(1.5);}
 }
-.container {
-    max-width: 1140px;
-}
 #tagline{
     font-size:2rem; 
     background-size:cover;
     height:540px;
 }
-#tagline .container {
-    border:10px double white;
-    margin:10px auto 10px;
-    height:550px;
-}
 #intro{
     padding-left:20%;
     font-size:48px;
     font-weight:900;
+}
+#map-container iframe{
+    width:98%;
+    height:450px;
 }
 #intro1{
     padding:20px;
