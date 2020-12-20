@@ -3,7 +3,13 @@ body{background:linear-gradient(rgba(0,0,0,0.53),rgba(0,0,0,0.541)), url(assets/
     color:white;
     animation: appear 2s linear 1;
 }
-
+.bttn a{
+    color:white;
+}
+.bttn a:hover{
+    color:white;
+    text-decoration:none;
+}
 @keyframes appear{
     from{visibility: collapse;opacity:0}
     to{visibility:visible;opacity:1}
@@ -45,7 +51,7 @@ aside .bttn{
     margin-left:8%;
     box-shadow: 0px 0px 10px 0px white; 
     background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(assets/images/blueBg1.jpg) center/cover;
-    font-weight:bolder;
+    
 }
 .Card{
     width:90%;
@@ -93,12 +99,43 @@ aside .bttn{
     transform: scale(0.8);
 }
 }
+.i-container{
+    background-color:transparent;
+}
 h1{
     text-shadow:4px 4px 6px darkcyan;
 }
-.gallery,.image{
+.image{
     width:100%;
-    height:500px;
+    height:fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#gallery,#images{
+    width:80%; 
+    max-width:700px; 
+    min-width:350px; 
+    border:2px solid darkcyan;
+    height:80%; 
+    max-height:700px; 
+    min-height:350px;
+    margin:50px 0px 50px 0px;
+}
+.gallery{border:1px solid white}
+.desc{
+    font-size:100px;
+    font-weight:100;
+    text-align:center;
+}
+#contribute{
+    width:100%;
+    background:linear-gradient(rgba(0,105,105,0.79),rgba(0,155,155,0.71)) ,url(assets/images/contribute.jpg) no-repeat center/cover;
+    height:380px;
+    font-weight: 100px;
+    font-size: 30px;
+    padding:10px;
+    text-align: center;
 }
 .newspost{
     width:90%;
@@ -107,7 +144,6 @@ h1{
 }
 .image{
     background-image:linear-gradient(rgba(0,105,105,0.29),rgba(0,155,155,0.71));
-    width:80%;
     height:500px;
     margin:2px;
 }
@@ -115,9 +151,9 @@ table{font-weight: 400;width:fit-content;}
 a{font-size:20px;} 
 .footer{
     align-items:center;
-    height:210px;
+    height:250px;
     color:white;
-    background:rgb(0,50,50);
+    background:rgb(0,60,80);
 } 
 .footer-widget{
     height:30px;
@@ -129,6 +165,8 @@ a{font-size:20px;}
     list-style-type: none;
     margin:0px;
     padding:0px;
+    border:1px solid white;
+    margin-right:5px;
 }
 #social-icons li{
     display: inline-block;
@@ -141,6 +179,7 @@ a{font-size:20px;}
 .about-content{
     font-size:35px;
     font-weight:100;
+    background:linear-gradient(rgba(0,40,50,0.5),rgba(0,40,50,0.65));
 }
 #title{
     font-size:38px;
@@ -148,8 +187,10 @@ a{font-size:20px;}
     text-align: center;
 }
 @media(max-width:576px){
+#contribute{font-size:1.2rem}
+.desc{font-size:60px}
 .image i{
-    font-size:100px;
+    font-size:40px;
 }
 #tagline{
     font-size:1.4rem;
@@ -171,8 +212,11 @@ a{font-size:20px;}
     width:98%;
     height:400px;
 }
+aside{visibility: hidden;}
+.about-content{font-size:1.2rem}
 }
 @media (min-width: 768px) {
+.desc{font-size:70px}
 #tagline{font-size:1.5rem;}
 .image i{font-size:70px;}
 }

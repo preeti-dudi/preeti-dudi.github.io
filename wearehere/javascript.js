@@ -27,10 +27,6 @@ function scrollFunction() {
     document.getElementById("main").style.width = "90%";
   }
 }
-function leftImage(){
-    var address="assets/images/";
-
-}
 function needWork(){
     var needwork = '<div class=" Card"><h1>WANT TO WORK</h1><form><div class="form-group"><label for="skil1">Skills:</label></div><div class="form-group"><label for="qualification">Qualification:</label></div><div class="form-group"><label for="experience">Experience:</label></div></form></div>' ;
     var div = document.createElement("div");
@@ -44,17 +40,27 @@ function needWork(){
     document.body.appendChild(div);
 }
 
-var images=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg"]
+var images=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","11.jpg","12.jpg","13.jpg"]
 var i=0;
-var img=document.getElementById("image");
-var Scr="assets/images/";
 function next(){
-  i++;
-  Src+=images[i];
-  img.src=Src;
+  i=(i==12)?0:i+1;
+  var img=document.getElementById("gallery");
+  img.src="assets/images/"+images[i];
 }
 function prev(){
-  i--;
-  Src+=images[i];
-  img.src=Src;
+  i=(i==0)?12:i-1;
+  var img=document.getElementById("gallery");
+  img.src="assets/images/"+images[i];
+}
+var photos=["000.jpg","001.jpg","002.jpg","003.jpg","004.jpg","005.jpg","006.jpg","007.jpg","008.jpg"]
+var j=0;
+function nextPhoto(){
+  j=(j==8)?0:j+1;
+  var img=document.getElementById("images");
+  img.src="assets/images/"+photos[j];
+}
+function prevPhoto(){
+  j=(j==8)?8:j-1;
+  var img=document.getElementById("images");
+  img.src="assets/images/"+photos[j];
 }

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="javascript.js" async></script>
     <script src="https://kit.fontawesome.com/08d58dd9d6.js" crossorigin="anonymous" async></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js" async></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -44,11 +45,20 @@
     
     <div class="gallery">
         <div class="image">
-           <i class="fa fa-arrow-circle-left" onclick="prev()"></i>
-           <img src="assets/images/1.jpg" id="image" alt="help" width="80%" style="border:2px solid darkcyan" height="400px">
-           <i class="fa fa-arrow-circle-right" onclick="next()"></i>
+           <button onclick="prev()" class="i-container"><i class="fa fa-arrow-circle-left"></i></button>
+           <img src="assets/images/1.jpg" id="gallery" alt="help">
+           <button onclick="next()" class="i-container"><i class="fa fa-arrow-circle-right"></i></button>    
+        </div>
+        <p class="desc">DISTRIBUTIONS</p>
+    </div>
+    <div class="gallery">
+        <div class="image">
+           <button onclick="prevPhoto()" class="i-container"><i class="fa fa-arrow-circle-left"></i></button>
+           <img src="assets/images/000.jpg" id="images" alt="help">
+           <button onclick="nextPhoto()" class="i-container"><i class="fa fa-arrow-circle-right"></i></button>
                 
         </div>
+        <p class="desc">ADVISARY</p>
     </div>
     
     
@@ -97,6 +107,7 @@
 </footer>
 
 <div class="footer-widget">
+    <div class="container">
     <div class="row">
         <div class="col-lg-6 col-6 col-md-6 col-sm-6">
             <i class="fa fa-copyright"></i>
@@ -110,7 +121,8 @@
                 <li><a><i class="fa fa-envelope fas" aria-hidden="true"></i></a></li>
             </ul>
         </div>
-    </div>      
+    </div> 
+</div>     
 </div>
    
     
