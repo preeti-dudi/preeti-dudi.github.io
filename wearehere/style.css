@@ -76,6 +76,9 @@ aside .bttn{
 .heading{
     font:italic bold 4rem Tangerine;
 }
+#need-help{
+    background: url("assets/images/LostJob.png") no-repeat center/contain;
+}
 .bttn{
     box-shadow:inset 0px 0px 10px 0px white, 2px 2px 10px 0px darkcyan;
     background-color:transparent;
