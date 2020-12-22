@@ -9,7 +9,7 @@ function send(){
 var pics=["bdbig.jpg", "bg.jpg","bgblacknblue.jpg","bgblue.png", "blakLaptop.jpg", "bluebg.jpg"];
 var i=0;
 function changeBackground(){
-    i=(i+1)%6;
+    i=(i+1)%5;
     var source="linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('"+pics[i]+"')";
     document.body.style.backgroundImage=source;
 }
