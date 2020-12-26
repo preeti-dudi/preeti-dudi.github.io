@@ -9,8 +9,11 @@ body{
     box-shadow:inset 0px -10px 20px 0px orange;
     position:fixed;
     width:100%;
+background-color:white;
     z-index: 100;
 }
+.footer-logo{
+border-radius:50%;}
 #syllabus{
     padding-top: 100px;
     padding-bottom: 50px;
@@ -29,7 +32,7 @@ body{
     margin-bottom: 50px;
 }
 .content{
-    background-image:linear-gradient(40deg,rgba(255,255,255,0.1),skyblue,rgba(255,255,255,0.1));
+    background-image:linear-gradient(40deg,rgba(125,155,255,0.1),black,rgba(155,155,255,0.1));
     width:70%;
     z-index:4;
     margin-left:15%;

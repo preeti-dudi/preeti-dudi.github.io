@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <title>Cafeteria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="javascript.js" async></script>
+    <script src="bootstrap.js" async></script>
+    <link href="style.css" rel="stylesheet">
+    <link href="bootstrap.css" rel="stylesheet">
+
+
+    <style>
+        form{
+            background-color: rgb(243, 240, 236);
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light" id="primary-nav">
+        <img class="navbar-hrand logo" id="logo" src="images/logo.jpg" alt="Office Cafetaria App">
+       <div class="nav justify-content-end" id="links">
+            <ul class="nav  justify-content-end">
+               <li class="nav-item">
+                 <a class="nav-link" href="register.html">Register</a>
+               </li>
+               <li class="nav-item">
+                 <a class="nav-link" href="login.html">Login</a>
+               </li>
+            </ul>
+         </div>
+     </nav>
+<div class="container">
+    <h1 class="label">Register</h1>
+     <form action="" class="was-validated needs-validation text-center" novalidate>
+        <div class="form-group row">
+            <label class="col-sm-4"for="name">Full Name:</label>
+            <div class="col-sm-8"><input type="text" class="form-control" placeholder="Enter Full Name" name="fullname" id="name" required></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4"for="organization">Organization:</label>
+            <div class="col-sm-8"><input type="text" class="form-control" placeholder="Enter Organization Name" name="org" id="org" required></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4"for="organization">Employee ID:</label>
+            <div class="col-sm-8"><input type="text" class="form-control" placeholder="Enter Employee ID" name="employeeId" id="employeeId" required></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4"for="organization">Mobile Number:</label>
+            <div class="col-sm-8"><input type="text" class="form-control" placeholder="Enter Mobile Number" name="phone" id="phone" required></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4"for="email">Email address:</label>
+            <div class="col-sm-8"><input type="email" class="form-control" placeholder="Enter email" name="email" id="email" required></div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-4"for="id-card">Select image:</label>
+            <div class="col-sm-8"><input type="file" class="form-control" placeholder="ID card" id="img" name="img" accept="image/x-png,image/jpeg" required></div>
+        </div>
+        <button type="cancel" class="bttn bttn-outline">Cancel</button>
+        <button type="submit" class="bttn">Preview</button>
+      </form>
+</div>
+</body>
