@@ -1,0 +1,333 @@
+@import 'colours.scss';
+@font-face {
+	font-family: 'TTFirsNeue';
+	src: url('../../assets/fonts/TTFirsNeue3.ttf');
+}
+
+body {
+	background-color: $darkBlue;
+	color: $white;
+	font-family: 'Roboto', Courier, monospace;
+	padding: 0;
+	margin: 0;
+	transition: all 0.5s;
+}
+* {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	overflow-x: hidden;
+}
+*::selection {
+	color: $darkBlue;
+	border-radius: 0.3rem;
+	background-color: $yellow;
+}
+#connect,
+#profile,
+#work-and-projects,
+#skill-and-services {
+	min-height: 80vh;
+	flex-direction: column;
+	display: flex;
+	justify-content: space-between;
+	padding: 15vh 3rem 3rem 3rem;
+}
+header {
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	background-color: $darkBlue;
+	border-bottom: 1px solid $tortoise;
+	width: 100%;
+	.logo {
+		width: 20px;
+		border-radius: 50%;
+	}
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem;
+		.brand {
+			flex: 1;
+		}
+		ul {
+			flex: 1;
+			list-style-type: none;
+			display: flex;
+			justify-content: space-around;
+			li {
+				a {
+					padding: 0.3rem;
+					border-radius: 0.2rem;
+					color: $purple;
+					text-decoration: none;
+				}
+				a:hover {
+					color: $yellow;
+				}
+			}
+		}
+	}
+}
+
+#profile {
+	font-family: 'Playfair Display', Courier, monospace;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	padding: 5rem;
+	.description {
+		flex: 3;
+		font-size: 2rem;
+		padding: 3rem;
+	}
+
+	.image-box {
+		flex: 2;
+		.pic {
+			width: 100%;
+			// width: 50vh;
+			// height: 50vh;
+			border-radius: 50%;
+		}
+	}
+
+	.shake {
+		display: inline-block;
+		animation: shake 1s linear 0s infinite alternate-reverse;
+		transform-origin: bottom;
+	}
+}
+#skill-and-services {
+	ul.services {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		padding: 0rem 4rem;
+		li.service {
+			min-width: 45%;
+			max-width: 500px;
+			margin: 1rem 0rem;
+			p.service-title {
+				font-family: 'Roboto', Courier, monospace;
+				text-transform: uppercase;
+				color: $tortoise;
+				letter-spacing: 1.15px;
+				font-size: 1.5rem;
+				font-weight: 900;
+			}
+		}
+		li.service:nth-child(2n + 1) {
+			align-self: flex-end;
+		}
+		ul.skills {
+			list-style: none;
+			justify-content: space-around;
+			align-items: center;
+			color: $yellow;
+			display: flex;
+		}
+		ul.description {
+			padding: 1rem;
+			li:nth-child(2n + 1) {
+				color: $purple;
+			}
+			li:nth-child(2n) {
+				color: $pink;
+			}
+		}
+	}
+	ul.skills {
+		grid-template-columns: auto auto auto auto auto auto;
+	}
+}
+#work-and-projects {
+	// background-image: url('../../assets/svgs/color-changing-gradient-background.svg');
+	.projects {
+		display: flex;
+	}
+	.project {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		line-height: 1.8rem;
+		font-family: 'Roboto', Courier, monospace;
+		color: $tortoise;
+		letter-spacing: 1px;
+		font-weight: 100;
+
+		.subtitle {
+			text-transform: uppercase;
+			color: $purple;
+			letter-spacing: 1.15px;
+			font-size: 1.7rem;
+			font-weight: 900;
+		}
+		.description {
+			color: $pink;
+			font-weight: 800;
+		}
+	}
+}
+#connect {
+	padding-bottom: 0;
+	background-color: $tortoise;
+	color: $darkBlue;
+	.links {
+		#social-media {
+			list-style-type: none;
+			li {
+				display: inline;
+			}
+			// display: flex;
+			// justify-content: space-around;
+		}
+	}
+	.phone {
+		font-size: 2px;
+		transform: rotate(-30deg) translate(100px, 30px);
+		transform-origin: center;
+	}
+	.phone-base {
+		fill: $tortoise;
+		stroke: $darkBlue;
+		stroke-width: 3;
+	}
+	.phone-notch {
+		fill: $darkBlue;
+	}
+	.phone-button {
+		fill: $darkBlue;
+	}
+	.star {
+		fill: $yellow;
+		animation: blinking 2s ease-in 0s infinite alternate-reverse;
+	}
+
+	.left-mid {
+		transform: translate(-15px, 20px);
+	}
+	.right-top {
+		transform: translateX(40px);
+	}
+	.right-bottom {
+		transform: translateX(40px) translateY(50px);
+	}
+
+	.message-base {
+		fill: $pink;
+	}
+
+	.messgae-text {
+		font-size: 5px;
+	}
+
+	.footer-title {
+		font-family: TTFirsNeue, Courier, monospace;
+		font-size: 12px;
+		fill: $darkBlue;
+		font-weight: 1000;
+	}
+	.my-links {
+		fill: white;
+		font-family: TTFirsNeue, Courier, monospace;
+		font-size: 5px;
+	}
+	.footer-description {
+		font-family: TTFirsNeue, Courier, monospace;
+		font-size: 5px;
+		fill: $darkBlue;
+		font-weight: 200;
+	}
+	.footer-upper {
+		padding: 5rem;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		font-family: 'Roboto', Courier, monospace;
+	}
+	.footer-aside {
+		padding: 1rem;
+		color: $darkBlue;
+		border-top: 1px solid $purple;
+		background-color: $yellow;
+	}
+}
+.title-box {
+	margin-left: 10%;
+}
+.title {
+	font-size: 3.5rem;
+	color: $yellow;
+	text-decoration: underline;
+	// font-family: TTFirsNeue, Courier, monospace;
+	font-weight: 100;
+	// text-decoration-color: $purple;
+	// font-family: 'Playfair Display';
+}
+.box {
+	padding: 2rem 3rem;
+	margin: 3rem;
+	border-radius: 1.5rem;
+	background-color: #fff3;
+	box-shadow: 0px 0px 2px #000;
+}
+
+@keyframes shake {
+	50% {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes blinking {
+	50% {
+		transform: scale(0.5);
+		opacity: 0.5;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.project,
+	.box {
+		padding: 20px !important;
+		margin: 20px !important;
+		align-self: center !important;
+		border-radius: 20px !important;
+	}
+	.projects,
+	.services,
+	#connect,
+	#profile,
+	#work-and-projects,
+	#skill-and-services {
+		padding: 30px 0px !important;
+		flex-direction: column !important;
+		min-height: max-content !important;
+	}
+	header {
+		position: relative;
+		nav {
+			ul {
+				display: none;
+			}
+		}
+	}
+	#profile {
+		.description {
+			text-align: center;
+			font-size: 1rem;
+			padding: 10px;
+		}
+		.image-box {
+			display: contents;
+			img {
+				align-self: center;
+				max-width: 50%;
+			}
+		}
+	}
+}

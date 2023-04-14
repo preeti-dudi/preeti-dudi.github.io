@@ -1,0 +1,314 @@
+@font-face {
+  font-family: "TTFirsNeue";
+  src: url("../../assets/fonts/TTFirsNeue3.ttf");
+}
+body {
+  background-color: #050a30;
+  color: #fefeff;
+  font-family: "Roboto", Courier, monospace;
+  padding: 0;
+  margin: 0;
+  transition: all 0.5s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*::selection {
+  color: #050a30;
+  border-radius: 0.3rem;
+  background-color: #fdcf1c;
+}
+
+#connect,
+#profile,
+#work-and-projects,
+#skill-and-services {
+  min-height: 80vh;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  padding: 15vh 3rem 3rem 3rem;
+}
+
+header {
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: #050a30;
+  border-bottom: 1px solid #14c4ed;
+  width: 100%;
+}
+header .logo {
+  width: 20px;
+  border-radius: 50%;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+header nav .brand {
+  flex: 1;
+}
+header nav ul {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+header nav ul li a {
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  color: #cb6ce6;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #fdcf1c;
+}
+
+#profile {
+  font-family: "Playfair Display", Courier, monospace;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  padding: 5rem;
+}
+#profile .description {
+  flex: 3;
+  font-size: 2rem;
+  padding: 3rem;
+}
+#profile .image-box {
+  flex: 2;
+}
+#profile .image-box .pic {
+  width: 100%;
+  border-radius: 50%;
+}
+#profile .shake {
+  display: inline-block;
+  animation: shake 1s linear 0s infinite alternate-reverse;
+  transform-origin: bottom;
+}
+
+#skill-and-services ul.services {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0rem 4rem;
+}
+#skill-and-services ul.services li.service {
+  min-width: 45%;
+  max-width: 500px;
+  margin: 1rem 0rem;
+}
+#skill-and-services ul.services li.service p.service-title {
+  font-family: "Roboto", Courier, monospace;
+  text-transform: uppercase;
+  color: #14c4ed;
+  letter-spacing: 1.15px;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+#skill-and-services ul.services li.service:nth-child(2n+1) {
+  align-self: flex-end;
+}
+#skill-and-services ul.services ul.skills {
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  color: #fdcf1c;
+  display: flex;
+}
+#skill-and-services ul.services ul.description {
+  padding: 1rem;
+}
+#skill-and-services ul.services ul.description li:nth-child(2n+1) {
+  color: #cb6ce6;
+}
+#skill-and-services ul.services ul.description li:nth-child(2n) {
+  color: #ff66c4;
+}
+#skill-and-services ul.skills {
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+#work-and-projects .projects {
+  display: flex;
+}
+#work-and-projects .project {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.8rem;
+  font-family: "Roboto", Courier, monospace;
+  color: #14c4ed;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+#work-and-projects .project .subtitle {
+  text-transform: uppercase;
+  color: #cb6ce6;
+  letter-spacing: 1.15px;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+#work-and-projects .project .description {
+  color: #ff66c4;
+  font-weight: 800;
+}
+
+#connect {
+  padding-bottom: 0;
+  background-color: #14c4ed;
+  color: #050a30;
+}
+#connect .links #social-media {
+  list-style-type: none;
+}
+#connect .links #social-media li {
+  display: inline;
+}
+#connect .phone {
+  font-size: 2px;
+  transform: rotate(-30deg) translate(100px, 30px);
+  transform-origin: center;
+}
+#connect .phone-base {
+  fill: #14c4ed;
+  stroke: #050a30;
+  stroke-width: 3;
+}
+#connect .phone-notch {
+  fill: #050a30;
+}
+#connect .phone-button {
+  fill: #050a30;
+}
+#connect .star {
+  fill: #fdcf1c;
+  animation: blinking 2s ease-in 0s infinite alternate-reverse;
+}
+#connect .left-mid {
+  transform: translate(-15px, 20px);
+}
+#connect .right-top {
+  transform: translateX(40px);
+}
+#connect .right-bottom {
+  transform: translateX(40px) translateY(50px);
+}
+#connect .message-base {
+  fill: #ff66c4;
+}
+#connect .messgae-text {
+  font-size: 5px;
+}
+#connect .footer-title {
+  font-family: TTFirsNeue, Courier, monospace;
+  font-size: 12px;
+  fill: #050a30;
+  font-weight: 1000;
+}
+#connect .my-links {
+  fill: white;
+  font-family: TTFirsNeue, Courier, monospace;
+  font-size: 5px;
+}
+#connect .footer-description {
+  font-family: TTFirsNeue, Courier, monospace;
+  font-size: 5px;
+  fill: #050a30;
+  font-weight: 200;
+}
+#connect .footer-upper {
+  padding: 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  font-family: "Roboto", Courier, monospace;
+}
+#connect .footer-aside {
+  padding: 1rem;
+  color: #050a30;
+  border-top: 1px solid #cb6ce6;
+  background-color: #fdcf1c;
+}
+
+.title-box {
+  margin-left: 10%;
+}
+
+.title {
+  font-size: 3.5rem;
+  color: #fdcf1c;
+  text-decoration: underline;
+  font-weight: 100;
+}
+
+.box {
+  padding: 2rem 3rem;
+  margin: 3rem;
+  border-radius: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 2px #000;
+}
+
+@keyframes shake {
+  50% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes blinking {
+  50% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project,
+  .box {
+    padding: 20px !important;
+    margin: 20px !important;
+    align-self: center !important;
+    border-radius: 20px !important;
+  }
+  .projects,
+  .services,
+  #connect,
+  #profile,
+  #work-and-projects,
+  #skill-and-services {
+    padding: 30px 0px !important;
+    flex-direction: column !important;
+    min-height: max-content !important;
+  }
+  header {
+    position: relative;
+  }
+  header nav ul {
+    display: none;
+  }
+  #profile .description {
+    text-align: center;
+    font-size: 1rem;
+    padding: 10px;
+  }
+  #profile .image-box {
+    display: contents;
+  }
+  #profile .image-box img {
+    align-self: center;
+    max-width: 50%;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
