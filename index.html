@@ -12,18 +12,54 @@
 		<title>Preeti Dudi</title>
 		<link href="src/css/styles.css" rel="stylesheet" type="text/css" />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&family=Playfair+Display&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Playfair+Display&display=swap"
 			rel="stylesheet"
 		/>
+		<script type="text/JavaScript">
+			      function changeTheme() {
+			          if ( document.body.classList.value.indexOf('light') != -1) {
+			              document.body.classList.remove('light');
+			              document.body.classList.add('dark');
+			          } else {
+			              document.body.classList.remove('dark');
+			              document.body.classList.add('light');
+			          }
+			      }
+			function toggleNavigation() {
+			                      nav = document.getElementById('nav');
+			                      header = document.getElementById('header');
+				if ( nav.classList.value.indexOf('hidden') != -1) {
+					nav.classList.remove('hidden');
+					nav.classList.add('visible');
+					header.classList.remove('hidden');
+					header.classList.add('visible');
+				} else {
+					nav.classList.remove('visible');
+					nav.classList.add('hidden');
+					header.classList.remove('hidden');
+					header.classList.add('visible');
+				}
+			}
+			         window.onscroll = () => {
+			             console.log(document)
+			         }
+		</script>
 	</head>
-	<body>
-		<header>
+
+	<body class="light">
+		<header id="header">
 			<nav>
 				<div class="brand">
-					<img src="assets/my-pic.jpg" class="logo" alt="logo" />
-					<span>Preeti D.</span>
+					<img
+						onclick="toggleNavigation()"
+						src="assets/logo.png"
+						class="logo"
+						alt="Preeti D."
+					/>
 				</div>
-				<ul class="nav">
+
+				<ul id="nav" class="nav">
+					<li><a onclick="changeTheme()">Change Theme</a></li>
 					<li><a href="#profile">Profile</a></li>
 					<li><a href="#skill-and-services">Skills & Services</a></li>
 					<li><a href="#work-and-projects">Work & Projects</a></li>
@@ -33,6 +69,10 @@
 		</header>
 
 		<section id="profile">
+			<div class="image-box">
+				<!-- <div class="image"></div> -->
+				<img class="pic" src="assets\my-pic.jpg" alt="Image" />
+			</div>
 			<div class="description">
 				<p class="yellow-text">
 					Hello<span class="hand-emoji shake">&#x270B;</span>, I am<br />
@@ -40,10 +80,6 @@
 					a Freelancer Software Developer based in India, who would love helping
 					users and businesses reach their goals through design & code.
 				</p>
-			</div>
-			<div class="image-box">
-				<!-- <div class="image"></div> -->
-				<img class="pic" src="assets\my-pic.jpg" alt="Image" />
 			</div>
 		</section>
 
@@ -153,108 +189,114 @@
 			<div class="content"></div>
 		</section>
 		<footer id="connect">
-			<svg viewbox="0 0 198 85" width="100%" xmlns="http://www.w3.org/2000/svg">
-				<text x="3" y="10" class="footer-title">
-					In need of Developer/Designer?
-				</text>
-				<text x="3.2" y="10" class="footer-title">
-					In need of Developer/Designer?
-				</text>
-				<text x="3" y="18" class="footer-description">
-					I'm currently available for work
-				</text>
-				<text x="3.5" y="40" class="my-links">prity.dudi@gmail.com</text>
-
-				<g class="phone">
-					<rect
-						x="5"
-						y="5"
-						rx="5"
-						ry="5"
-						width="45"
-						height="60"
-						class="phone-base"
-					/>
-					<rect
-						x="19"
-						y="4"
-						rx="2"
-						ry="2"
-						width="17"
-						height="5"
-						class="phone-notch"
-					/>
-					<rect
-						x="2"
-						y="20"
-						rx="2"
-						ry="2"
-						width="3"
-						height="10"
-						class="phone-button"
-					/>
-
-					<rect
-						x="9"
-						y="12"
-						rx="2"
-						ry="2"
-						width="37"
-						height="30"
-						class="message-base"
-					/>
-					<foreignObject x="10" y="13" width="35" height="28">
-						<p class="message-text">
-							My ability to work independently and as part of a team, combined
-							with my excellent communication skills, make me a valuable asset
-							to any organization. Whether you are a startup, a small business
-							owner, or a large corporation looking to develop a robust web
-							application or mobile app, I can help you achieve your goals.
-						</p>
-					</foreignObject>
-
-					<rect
-						x="9"
-						y="44"
-						rx="2"
-						ry="2"
-						width="37"
-						height="15"
-						class="message-base"
-					/>
-					<foreignObject x="10" y="45" width="33" height="12">
-						<p class="message-text">
-							Please feel free to reach out to me to discuss your project
-							requirements or collaborate on an exciting project.
-						</p>
-					</foreignObject>
-
-					<g class="star-holder left-mid">
-						<path
-							class="star small"
-							d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
-							fill-opacity="1"
-							fill-rule="nonzero"
+			<div id="footer-left-block">
+				<div>
+					<h1 class="footer-title">In need of Developer?</h1>
+					<h4 class="footer-description">I'm currently available for work</h4>
+				</div>
+				<div>
+					<p class="my-links">prity.dudi@gmail.com</p>
+				</div>
+				<div></div>
+			</div>
+			<div id="footer-right-block">
+				<svg
+					viewbox="0 0 98 85"
+					class="phone-svg"
+					width="100%"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<g class="phone">
+						<rect
+							x="5"
+							y="5"
+							rx="5"
+							ry="5"
+							width="45"
+							height="60"
+							class="phone-base"
 						/>
-					</g>
-					<g class="star-holder right-top">
-						<path
-							class="star small"
-							d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
-							fill-opacity="1"
-							fill-rule="nonzero"
+						<rect
+							x="19"
+							y="4"
+							rx="2"
+							ry="2"
+							width="17"
+							height="5"
+							class="phone-notch"
 						/>
-					</g>
-					<g class="star-holder right-bottom">
-						<path
-							class="star small"
-							d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
-							fill-opacity="1"
-							fill-rule="nonzero"
+						<rect
+							x="2"
+							y="20"
+							rx="2"
+							ry="2"
+							width="3"
+							height="10"
+							class="phone-button"
 						/>
+
+						<rect
+							x="9"
+							y="12"
+							rx="2"
+							ry="2"
+							width="37"
+							height="30"
+							class="message-base"
+						/>
+						<foreignObject x="10" y="13" width="35" height="28">
+							<p class="message-text">
+								My ability to work independently and as part of a team, combined
+								with my excellent communication skills, make me a valuable asset
+								to any organization. Whether you are a startup, a small business
+								owner, or a large corporation looking to develop a robust web
+								application or mobile app, I can help you achieve your goals.
+							</p>
+						</foreignObject>
+
+						<rect
+							x="9"
+							y="44"
+							rx="2"
+							ry="2"
+							width="37"
+							height="15"
+							class="message-base"
+						/>
+						<foreignObject x="10" y="45" width="33" height="12">
+							<p class="message-text">
+								Please feel free to reach out to me to discuss your project
+								requirements or collaborate on an exciting project.
+							</p>
+						</foreignObject>
+
+						<g class="star-holder left-mid">
+							<path
+								class="star small"
+								d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
+								fill-opacity="1"
+								fill-rule="nonzero"
+							/>
+						</g>
+						<g class="star-holder right-top">
+							<path
+								class="star small"
+								d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
+								fill-opacity="1"
+								fill-rule="nonzero"
+							/>
+						</g>
+						<g class="star-holder right-bottom">
+							<path
+								class="star small"
+								d="M 30 15 C 16 16 16 16 15 30 C 14 16 14 16 0 15 C 14 14 14 14 15 0 C 16 14 16 14 30 15 Z M 30 15 "
+								fill-opacity="1"
+								fill-rule="nonzero"
+							/>
+						</g>
 					</g>
-				</g>
-			</svg>
+				</svg>
+			</div>
 		</footer>
 	</body>
 	<!-- <script src="src\js\scroll-animation.js" async></script> -->
