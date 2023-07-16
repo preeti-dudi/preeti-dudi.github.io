@@ -34,9 +34,6 @@ body header .brand {
 }
 body header .brand .logo {
   width: 3rem;
-  position: fixed;
-  top: 0.3rem;
-  left: 1rem;
   border-radius: 50%;
 }
 body header nav {
@@ -152,13 +149,6 @@ body #connect #footer-left-block {
   flex-direction: column;
   justify-content: space-around;
 }
-body #connect #footer-left-block :nth-child(n) {
-  justify-content: center;
-  flex-wrap: wrap;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
 body #connect #footer-right-block {
   justify-content: center;
   flex-wrap: wrap;
@@ -208,7 +198,7 @@ body #connect .footer-title {
 }
 body #connect .my-links {
   font-family: "Kanit", Courier, monospace;
-  font-size: 1.5rem;
+  text-decoration: none;
 }
 body #connect .footer-description {
   font-family: "Kanit", Courier, monospace;
@@ -259,23 +249,14 @@ body .box {
     flex-direction: column !important;
     min-height: max-content !important;
   }
-  body header {
-    position: relative;
-  }
   body header nav ul {
     display: none;
   }
   body header nav .brand {
     display: block;
   }
-  body header.hidden {
-    position: relative;
-  }
   body header.hidden nav ul {
     display: none;
-  }
-  body header.visible {
-    position: fixed;
   }
   body header.visible nav ul.visible {
     display: block;
@@ -358,13 +339,14 @@ body.light #connect .message-base {
   fill: #ff66c4;
 }
 body.light #connect .footer-title {
-  fill: #050a30;
+  color: #050a30;
 }
 body.light #connect .my-links {
-  fill: #e5eaf0;
+  color: #e5eaf0;
 }
 body.light #connect .footer-description {
-  fill: #050a30;
+  font-weight: 100;
+  color: #050a30;
 }
 body.light .title {
   color: #fdcf1c;

@@ -34,9 +34,6 @@ body {
 			display: none;
 			.logo {
 				width: 3rem;
-				position: fixed;
-				top: 0.3rem;
-				left: 1rem;
 				border-radius: 50%;
 			}
 		}
@@ -165,13 +162,6 @@ body {
 			padding: 0rem 3rem;
 			display: flex;
 			flex-direction: column;
-			:nth-child(n) {
-				justify-content: center;
-				flex-wrap: wrap;
-				display: flex;
-				flex-direction: column;
-				flex: 1;
-			}
 			justify-content: space-around;
 		}
 		#footer-right-block {
@@ -231,7 +221,7 @@ body {
 		}
 		.my-links {
 			font-family: 'Kanit', Courier, monospace;
-			font-size: 1.5rem;
+			text-decoration: none;
 		}
 		.footer-description {
 			font-family: 'Kanit', Courier, monospace;
@@ -288,7 +278,6 @@ body {
 			min-height: max-content !important;
 		}
 		header {
-			position: relative;
 			nav {
 				ul {
 					display: none;
@@ -299,7 +288,6 @@ body {
 			}
 		}
 		header.hidden {
-			position: relative;
 			nav {
 				ul {
 					display: none;
@@ -307,7 +295,6 @@ body {
 			}
 		}
 		header.visible {
-			position: fixed;
 			nav {
 				ul.visible {
 					display: block;
@@ -410,13 +397,14 @@ body.light {
 		}
 
 		.footer-title {
-			fill: $darkBlue;
+			color: $darkBlue;
 		}
 		.my-links {
-			fill: $whiteBlue;
+			color: $whiteBlue;
 		}
 		.footer-description {
-			fill: $darkBlue;
+			font-weight: 100;
+			color: $darkBlue;
 		}
 	}
 	.title {

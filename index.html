@@ -15,6 +15,16 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Playfair+Display&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+		/>
+		<style>
+			.material-symbols-rounded {
+				font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+				font-size: 4rem !important;
+			}
+		</style>
 		<script type="text/JavaScript">
 			      function changeTheme() {
 			          if ( document.body.classList.value.indexOf('light') != -1) {
@@ -28,14 +38,17 @@
 			function toggleNavigation() {
 			                      nav = document.getElementById('nav');
 			                      header = document.getElementById('header');
-				if ( nav.classList.value.indexOf('hidden') != -1) {
-					nav.classList.remove('hidden');
-					nav.classList.add('visible');
+			                               navlogo = document.getElementById('navlogo');
+				if ( nav.classList.value.indexOf('visible') != -1) {
+					nav.classList.remove('visible');
+					nav.classList.add('hidden');
+			                 navlogo.innerHTML = 'menu';
 					header.classList.remove('hidden');
 					header.classList.add('visible');
 				} else {
-					nav.classList.remove('visible');
-					nav.classList.add('hidden');
+					nav.classList.remove('hidden');
+					nav.classList.add('visible');
+			                 navlogo.innerHTML = 'close';
 					header.classList.remove('hidden');
 					header.classList.add('visible');
 				}
@@ -50,12 +63,9 @@
 		<header id="header">
 			<nav>
 				<div class="brand">
-					<img
-						onclick="toggleNavigation()"
-						src="assets/logo.png"
-						class="logo"
-						alt="Preeti D."
-					/>
+					<a onclick="toggleNavigation()">
+						<span class="material-symbols-rounded" id="navlogo"> menu </span>
+					</a>
 				</div>
 
 				<ul id="nav" class="nav">
@@ -196,6 +206,9 @@
 				</div>
 				<div>
 					<p class="my-links">prity.dudi@gmail.com</p>
+					<a class="my-links" href="mailto:prity.dudi@@gmail.com">
+						<span class="material-symbols-rounded"> send </span>
+					</a>
 				</div>
 				<div></div>
 			</div>
@@ -236,15 +249,17 @@
 						/>
 
 						<rect
-							x="9"
-							y="12"
+							x="-10"
+							y="25"
 							rx="2"
 							ry="2"
 							width="37"
 							height="30"
 							class="message-base"
 						/>
-						<foreignObject x="10" y="13" width="35" height="28">
+						<circle cx="40" cy="56" r="2" class="message-base" />
+						<circle cx="32" cy="50" r="4" class="message-base" />
+						<foreignObject x="-9" y="26" width="35" height="28">
 							<p class="message-text">
 								My ability to work independently and as part of a team, combined
 								with my excellent communication skills, make me a valuable asset
@@ -255,15 +270,16 @@
 						</foreignObject>
 
 						<rect
-							x="9"
-							y="44"
-							rx="2"
-							ry="2"
+							x="18.5"
+							y="4"
+							rx="4"
+							ry="4"
 							width="37"
-							height="15"
+							height="12"
 							class="message-base"
 						/>
-						<foreignObject x="10" y="45" width="33" height="12">
+						<circle cx="20" cy="20" r="3" class="message-base" />
+						<foreignObject x="20" y="5" width="33" height="12">
 							<p class="message-text">
 								Please feel free to reach out to me to discuss your project
 								requirements or collaborate on an exciting project.
