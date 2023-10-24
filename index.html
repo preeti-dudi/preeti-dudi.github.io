@@ -8,214 +8,32 @@
 		/>
 		<meta name="keywords" content="software-developer, " />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="icon" href="assets\my-pic.jpg" type="image/icon type" />
+		<link rel="icon" href="assets\my-pic-char.jpg" type="image/icon type" />
 		<title>Preeti Dudi</title>
-		<link href="src/css/styles.css" rel="stylesheet" type="text/css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Roboto&family=Kanit&family=Playfair+Display&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="src/css/animate.css" rel="stylesheet" type="text/css" />
+		<script src="src/js/animate.js"></script>
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
 		/>
-		<style>
-			.material-symbols-rounded {
-				font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
-				font-size: 4rem !important;
-			}
-		</style>
-		<script type="text/JavaScript">
-			      function changeTheme() {
-			          if ( document.body.classList.value.indexOf('light') != -1) {
-			              document.body.classList.remove('light');
-			              document.body.classList.add('dark');
-			          } else {
-			              document.body.classList.remove('dark');
-			              document.body.classList.add('light');
-			          }
-			      }
-			function toggleNavigation() {
-			                      nav = document.getElementById('nav');
-			                      header = document.getElementById('header');
-			                               navlogo = document.getElementById('navlogo');
-				if ( nav.classList.value.indexOf('visible') != -1) {
-					nav.classList.remove('visible');
-					nav.classList.add('hidden');
-			                 navlogo.innerHTML = 'menu';
-					header.classList.remove('hidden');
-					header.classList.add('visible');
-				} else {
-					nav.classList.remove('hidden');
-					nav.classList.add('visible');
-			                 navlogo.innerHTML = 'close';
-					header.classList.remove('hidden');
-					header.classList.add('visible');
-				}
-			}
-			         window.onscroll = () => {
-			             console.log(document)
-			         }
-		</script>
 	</head>
 
-	<body class="light">
-		<header id="header">
-			<nav>
-				<div class="brand">
-					<a onclick="toggleNavigation()">
-						<span class="material-symbols-rounded" id="navlogo"> menu </span>
-					</a>
-				</div>
-
-				<ul id="nav" class="nav">
-					<li><a onclick="changeTheme()">Change Theme</a></li>
-					<li><a href="#profile">Profile</a></li>
-					<li><a href="#skill-and-services">Skills & Services</a></li>
-					<li><a href="#work-and-projects">Work & Projects</a></li>
-					<li><a href="#connect">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section id="profile">
-			<div class="image-box">
-				<!-- <div class="image"></div> -->
-				<img class="pic" src="assets\my-pic.jpg" alt="Image" />
-			</div>
-			<div class="description">
-				<p class="yellow-text">
-					Hello<span class="hand-emoji shake">&#x270B;</span>, I am<br />
-					<span class="title pink-text">PREETI</span>,<br />
-					a Freelancer Software Developer based in India, who would love helping
-					users and businesses reach their goals through design & code.
-				</p>
-			</div>
-		</section>
-
-		<section id="work-and-projects">
-			<!--Here I showcases a range of web applications and mobile apps that I have
-				developed using various technologies such as React Native, HTML, CSS,
-				JavaScript, Laravel, MySQL, and PHP. My passion for web development
-				started during my Bachelor's in Information Technology, and since then,
-				I have worked on numerous projects that have honed my skills and
-				expertise.-->
-			<div class="title-box">
-				<p class="subtitle">WHAT HAD I DONE</p>
-				<p class="title">Work Experience <br />& Projects</p>
-			</div>
-			<div class="projects">
-				<div class="project box">
-					<h3 class="subtitle">Software Engineer</h3>
-					<p class="description">(LARAVEL, REACT NATIVE)</p>
-					<p>Novoinvent Software Private Limited</p>
-					<a class="web-link" target="_blank" href="assets/Preeti Resume.pdf"
-						>&#128279;</a
-					>
-				</div>
-				<div class="project box">
-					<h3 class="subtitle">Roadmapper</h3>
-					<p class="description">
-						(WEB DESIGN, LARAVEL, ANGULAR, REACT NATIVE)
-					</p>
-					<p>Personal Project</p>
-					<a
-						class="web-link"
-						target="_blank"
-						href="https://roadmap-cartographer.000webhostapp.com"
-						>&#128279;</a
-					>
-				</div>
-			</div>
-		</section>
-
-		<section id="skill-and-services">
-			<div class="title-box">
-				<p class="subtitle">WHAT I CAN DO</p>
-				<p class="title">
-					Skills &<br />
-					Services
-				</p>
-				<!--I am an enthusiastic learner and continuously update my knowledge by
-				attending web development conferences and participating in online
-				courses.-->
-			</div>
-			<ul class="services">
-				<li class="service box">
-					<p class="service-title">Front end development</p>
-					<ul class="skills">
-						<li>HTML5</li>
-						<li>CSS3</li>
-						<li>JS</li>
-						<li>Angular</li>
-						<li>React</li>
-					</ul>
-					<ul class="description">
-						<li>Create website UI from wireframe.</li>
-						<li>Integrate social media links or authentication in website.</li>
-						<li>Integrate eCommerce in an existing website.</li>
-					</ul>
-				</li>
-				<li class="service box">
-					<p class="service-title">Back end development</p>
-					<ul class="skills">
-						<li>PHP</li>
-						<li>MySQL</li>
-						<li>Nginx</li>
-						<li>Laravel</li>
-					</ul>
-					<ul class="description">
-						<li>Create database and APIs to manage data in it.</li>
-						<li>Integrate social media authentication in website.</li>
-						<li>Integrate eCommerce in an existing website.</li>
-					</ul>
-				</li>
-				<li class="service box">
-					<p class="service-title">Website Designing</p>
-					<ul class="skills">
-						<li>figma</li>
-						<li>Canva</li>
-					</ul>
-					<ul class="description">
-						<li>Create website/mobile application UI wireframe.</li>
-						<li>Create logo and images.</li>
-					</ul>
-				</li>
-				<li class="service box">
-					<p class="service-title">Mobile App development</p>
-					<ul class="skills">
-						<li>React Native</li>
-						<li>Redux</li>
-						<li>Firebase</li>
-					</ul>
-					<ul class="description">
-						<li>Create website UI from wireframe.</li>
-						<li>Integrate social media authentication in app.</li>
-						<li>Integrate ads in your react native app.</li>
-						<li>Integrate eCommerce in an existing react native app.</li>
-					</ul>
-				</li>
-			</ul>
-			<div class="content"></div>
-		</section>
-		<footer id="connect">
-			<div id="footer-left-block">
-				<div>
-					<h1 class="footer-title">In need of Developer?</h1>
-					<h4 class="footer-description">I'm currently available for work</h4>
-				</div>
-				<div>
-					<p class="my-links">prity.dudi@gmail.com</p>
+	<body>
+		<section class="row-animate" id="intro">
+			<div class="my-intro">
+				<h1 class="my-title hidden" style="--order: 0">
+					Hi <span class="hand-emoji shake">&#x270B;</span>, I'm Preeti
+				</h1>
+				<h4 class="my-description hidden" style="--order: 1">
+					Developer & Designer
 					<a class="my-links" href="mailto:prity.dudi@@gmail.com">
-						<span class="material-symbols-rounded"> send </span>
+						<span class="material-symbols-rounded send"> send </span>
 					</a>
-				</div>
-				<div></div>
-			</div>
-			<div id="footer-right-block">
+				</h4>
 				<svg
-					viewbox="0 0 98 85"
-					class="phone-svg"
+					style="--order: 4"
+					viewbox="0 0 95 85"
+					class="phone-svg hidden"
 					width="100%"
 					xmlns="http://www.w3.org/2000/svg"
 				>
@@ -313,7 +131,148 @@
 					</g>
 				</svg>
 			</div>
-		</footer>
+
+			<div class="image-box hidden" style="--order: 3">
+				<img class="pic" src="assets\my-pic-char.jpg" alt="Image" />
+			</div>
+		</section>
+		<section class="">
+			<h3 class="title">Skills &<br />Services</h3>
+			<p>
+				I am an enthusiastic learner and continuously update my knowledge by
+				attending web development conferences and participating in online
+				courses.
+			</p>
+
+			<ul id="services" class="content-list row-list row-animate">
+				<li style="--order: 0" class="service content hidden">
+					<p class="subtitle">Front end development</p>
+					<ul class="skills sub-list">
+						<li class="hidden" style="--order: 0">HTML5</li>
+						<li class="hidden" style="--order: 1">CSS3</li>
+						<li class="hidden" style="--order: 2">JS</li>
+						<li class="hidden" style="--order: 3">Angular</li>
+						<li class="hidden" style="--order: 4">React</li>
+					</ul>
+					<ul class="description color-list">
+						<li class="hidden" style="--order: 0">
+							Create website UI from wireframe.
+						</li>
+						<li class="hidden" style="--order: 1">
+							Integrate social media links or authentication in website.
+						</li>
+						<li class="hidden" style="--order: 2">
+							Integrate eCommerce in an existing website.
+						</li>
+					</ul>
+				</li>
+				<li style="--order: 1" class="service content hidden">
+					<p class="subtitle">Back end development</p>
+					<ul class="skills sub-list">
+						<li class="hidden" style="--order: 0">PHP</li>
+						<li class="hidden" style="--order: 1">MySQL</li>
+						<li class="hidden" style="--order: 2">Nginx</li>
+						<li class="hidden" style="--order: 3">Laravel</li>
+					</ul>
+					<ul class="description color-list">
+						<li class="hidden" style="--order: 0">
+							Create database and APIs to manage data in it.
+						</li>
+						<li class="hidden" style="--order: 1">
+							Integrate social media authentication in website.
+						</li>
+						<li class="hidden" style="--order: 2">
+							Integrate eCommerce in an existing website.
+						</li>
+					</ul>
+				</li>
+				<li style="--order: 2" class="service content hidden">
+					<p class="subtitle">Website Designing</p>
+					<ul class="skills sub-list">
+						<li class="hidden" style="--order: 0">figma</li>
+						<li class="hidden" style="--order: 1">Canva</li>
+					</ul>
+					<ul class="description color-list">
+						<li class="hidden" style="--order: 0">
+							Create website/mobile application UI wireframe.
+						</li>
+						<li class="hidden" style="--order: 1">Create logo and images.</li>
+					</ul>
+				</li>
+				<li style="--order: 3" class="service content hidden">
+					<p class="subtitle">Mobile App development</p>
+					<ul class="skills sub-list">
+						<li class="hidden" style="--order: 0">React Native</li>
+						<li class="hidden" style="--order: 1">Redux</li>
+						<li class="hidden" style="--order: 2">Firebase</li>
+					</ul>
+					<ul class="description color-list">
+						<li class="hidden" style="--order: 0">
+							Create website UI from wireframe.
+						</li>
+						<li class="hidden" style="--order: 1">
+							Integrate social media authentication in app.
+						</li>
+						<li class="hidden" style="--order: 2">
+							Integrate ads in your react native app.
+						</li>
+						<li class="hidden" style="--order: 3">
+							Integrate eCommerce in an existing react native app.
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section class="">
+			<h3 class="title">Work Experience <br />& Projects</h3>
+
+			<p>
+				Here I showcases a range of web applications and mobile apps that I have
+				developed using various technologies such as React Native, HTML, CSS,
+				JavaScript, Laravel, MySQL, and PHP. My passion for web development
+				started during my Bachelor's in Information Technology, and since then,
+				I have worked on numerous projects that have honed my skills and
+				expertise.
+			</p>
+
+			<ul id="projects" class="content-list row-list row-animate">
+				<li class="project content hidden" style="--order: 0">
+					<h3 class="subtitle">Software Engineer</h3>
+					<ul class="description color-list">
+						<li>LARAVEL</li>
+						<li>ANGULAR</li>
+					</ul>
+					<p>
+						Novoinvent Software Private Limited
+						<a
+							class="my-links"
+							target="_blank"
+							href="assets/Preeti Profile.pdf"
+						>
+							<span class="material-symbols-rounded send"> send </span>
+						</a>
+					</p>
+				</li>
+				<li class="project content hidden" style="--order: 1">
+					<h3 class="subtitle">Roadmapper</h3>
+					<ul class="description color-list">
+						<li>WEB DESIGN</li>
+						<li>LARAVEL</li>
+						<li>ANGULAR</li>
+						<li>REACT NATIVE</li>
+					</ul>
+					<p>
+						Personal Project
+						<a
+							class="my-links"
+							target="_blank"
+							href="https://roadmap-cartographer.000webhostapp.com"
+						>
+							<span class="material-symbols-rounded send"> send </span>
+						</a>
+					</p>
+				</li>
+			</ul>
+		</section>
 	</body>
-	<!-- <script src="src\js\scroll-animation.js" async></script> -->
 </html>

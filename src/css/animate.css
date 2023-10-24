@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&family=Kanit&display=swap');
+:root {
+	--darkBlue: #050a30;
+	--whiteBlue: #e5eaf0;
+	--pink: #ff66c4;
+	--purple: #cb6ce6;
+	--yellow: #fdcf1c;
+	--tortoise: #14c4ed;
+	--white: #fefeff;
+	--black: #000;
+	--blackOpaque: #0006;
+	--order: 0;
+}
+body {
+	background-color: var(--tortoise);
+	color: var(--darkBlue);
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	display: grid;
+	place-items: center;
+	align-content: center;
+	min-height: 90vh;
+	margin: clamp(1rem, 10%, 4rem);
+}
+#intro {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.title {
+	font-size: 2rem;
+	text-align: left;
+	text-decoration: underline;
+	text-decoration-color: #cb6ce6;
+}
+.subtitle {
+	font-family: 'Kanit', Courier, monospace;
+	font-weight: 1000;
+	font-size: 1.5rem;
+	text-decoration: underline;
+	text-decoration-color: #cb6ce6;
+}
+.my-title {
+	font-family: 'Kanit', Courier, monospace;
+	font-size: 3.5rem;
+	font-weight: 1000;
+	margin: 0;
+}
+.my-links {
+	text-decoration: none;
+}
+.my-description {
+	font-family: 'Kanit', Courier, monospace;
+	font-size: 2rem;
+}
+
+.pic {
+	width: clamp(200px, 80%, 400px);
+	border-radius: 50%;
+}
+.phone-svg {
+	width: clamp(200px, 80%, 500px);
+}
+.phone {
+	font-size: 2px;
+	transform: rotate(-20deg) translate(14px, 10px);
+	transform-origin: center;
+}
+
+.phone-base {
+	stroke-width: 3;
+}
+.star-holder:nth-child(3n + 2) .star {
+	animation: blinking 2s ease-in 1.5s infinite alternate-reverse;
+}
+.star-holder:nth-child(3n + 1) .star {
+	animation: blinking 2s ease-in 1s infinite alternate-reverse;
+}
+.star-holder:nth-child(3n) .star {
+	animation: blinking 2s ease-in 0s infinite alternate-reverse;
+}
+
+.left-mid {
+	transform: translate(-15px, 20px);
+}
+.right-top {
+	transform: translateX(40px);
+}
+.right-bottom {
+	transform: translateX(40px) translateY(50px);
+}
+
+.messgae-text {
+	font-size: 5px;
+}
+.shake {
+	display: inline-block;
+	animation: shake 1s linear 0s infinite alternate-reverse;
+	transform-origin: bottom;
+}
+
+.phone-base {
+	fill: var(--whiteBlue);
+	stroke: var(--darkBlue);
+	stroke-width: 3;
+}
+.phone-notch {
+	fill: var(--darkBlue);
+}
+.phone-button {
+	fill: var(--darkBlue);
+}
+.star {
+	fill: var(--yellow);
+}
+.message-base {
+	fill: var(--pink);
+}
+
+.my-title {
+	color: var(--darkBlue);
+}
+.my-links {
+	color: var(--whiteBlue);
+}
+.my-description {
+	color: var(--darkBlue);
+}
+
+@keyframes shake {
+	50% {
+		transform: rotate(30deg);
+	}
+}
+
+@keyframes blinking {
+	50% {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur (5px);
+	transform: translateX(-100%);
+	transition: all 1s;
+}
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.row-animate :nth-child(n) {
+	transition-delay: calc(var(--order) * 250ms);
+	z-index: calc(var(--order) * -1);
+}
+
+ul.content-list li.content {
+	background-color: var(--blackOpaque);
+	list-style-type: none;
+	border-radius: 2%;
+	text-align: center;
+	color: var(--tortoise);
+	margin: 1rem;
+	padding: 0.2rem;
+}
+ul.row-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+ul.row-list :nth-child(n) {
+	flex: 1;
+	width: clamp(20%, 200px, 100%);
+}
+.sub-list {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-around;
+	color: var(--whiteBlue);
+}
+ul.color-list {
+	list-style-type: none;
+}
+.color-list li:nth-child(2n + 1) {
+	color: var(--purple);
+}
+.color-list li:nth-child(2n) {
+	color: var(--pink);
+}
