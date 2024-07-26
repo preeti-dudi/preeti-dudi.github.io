@@ -2,9 +2,10 @@
 :root {
 	--color5: #050a30;
 	--color6: #e5eaf0;
+	--color2: #e5eaf0;
 	--color4: #ff66c4;
 	--color3: #cb6ce6;
-	--color2: #fdcf1c;
+	/* --color2: #fdcf1c; */
 	--color1: #14c4ed;
 	--order: 0;
 }
@@ -220,13 +221,13 @@ body {
 .bg-color6 {
 	background-color: var(--color6);
 }
-.bg-color7 {
-	background-color: var(--color3);
+.bg-color8 {
+	background-color: var(--color6);
 	color: var(--color5);
 }
-.bg-color8 {
-	background-color: var(--color4);
-	color: var(--color5);
+.bg-color7 {
+	background-color: var(--color5);
+	color: var(--color6);
 }
 .bg-color15 {
 	background: linear-gradient(7deg, var(--color5) 50%, var(--color1) 50%);
@@ -255,3 +256,11 @@ body {
 #social-links{
 	padding: 2rem 0rem;
 }
+.my-links{
+	margin: 1rem;
+}
+@media (max-width: 900px) {
+	.hidden-on-small {
+	  display: none;
+	}
+  }
