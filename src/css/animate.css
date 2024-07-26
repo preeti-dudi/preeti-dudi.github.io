@@ -217,14 +217,16 @@ body {
 .bg-color2 {
 	background-color: var(--color2);
 }
-.bg-color3 {
-	background-color: var(--color3);
-}
-.bg-color4 {
-	background-color: var(--color4);
-}
 .bg-color6 {
 	background-color: var(--color6);
+}
+.bg-color7 {
+	background-color: var(--color3);
+	color: var(--color5);
+}
+.bg-color8 {
+	background-color: var(--color4);
+	color: var(--color5);
 }
 .bg-color15 {
 	background: linear-gradient(7deg, var(--color5) 50%, var(--color1) 50%);
@@ -240,9 +242,16 @@ body {
 	color: var(--color5);
 }
 
-.color-list li:nth-child(2n + 1) {
+/* .color-list li:nth-child(2n + 1) {
 	color: var(--color3);
 }
 .color-list li:nth-child(2n) {
 	color: var(--color4);
+} */
+.skill-image{
+	max-height:100px;
+	max-width: 50vw;
+}
+#social-links{
+	padding: 2rem 0rem;
 }
