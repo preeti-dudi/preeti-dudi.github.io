@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Preeti Dudi is a Software Developer, who is strong in design and integration with intuitive problem-solving skills. Proficient in HTML, CSS, JAVASCRIPT, SQL, PHP, React Native & Laravel. Passionate about implementing and launching new projects. Ability to translate business requirements into technical solutions." />
+    <meta name="keywords" content="software-developer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/my-pic-char.jpg" type="image/icon type" />
+    <title>Preeti Dudi</title>
+    <style>
+        /* General reset and basic styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        /* Canvas for background animation */
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place canvas behind other content */
+        }
+
+        /* Section styling */
+        section {
+            padding: 3rem 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            min-height: 100vh;
+            background-color: var(--color6); /* Default background color */
+            color: var(--color5); /* Default text color */
+        }
+
+        .profile {
+            background-color: var(--color1);
+        }
+
+        .experiences {
+            background-color: var(--color5);
+        }
+
+        .skills {
+            background-color: var(--color1);
+        }
+
+        .contact {
+            background: linear-gradient(7deg, var(--color5) 50%, var(--color1) 50%);
+            color: var(--color6);
+        }
+
+        /* Text styles */
+        .xxxl-text {
+            font-family: 'Kanit', Courier, monospace;
+            font-size: 4rem;
+        }
+
+        .xl-text {
+            font-family: 'Kanit', Courier, monospace;
+            font-size: 2rem;
+        }
+
+        .centre-text {
+            text-align: center;
+        }
+
+        /* Animation classes */
+        .hidden {
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        /* Social links styling */
+        #social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .my-links {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--color5);
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .my-links:hover {
+            transform: scale(1.2);
+        }
+
+        .my-links img {
+            width: 70%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Canvas for background animation -->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!-- Sections -->
+    <section class="page profile row-animate" id="intro">
+        <div class="mw-80">
+            <h1 class="dark-text xxxl-text hidden" style="--order: 0">
+                Hi <span class="hand-emoji shake">&#x270B;</span>, I'm Preeti
+            </h1>
+            <h4 class="bg-color2 xl-text dark-text br1rem centre-text hidden" style="--order: 1">
+                Software Developer
+            </h4>
+        </div>
+        <div class="image-box hidden" style="--order: 3">
+            <img class="wmn-200-wmx-400 br50per" src="assets/my-pic-char.jpg" alt="Image" />
+        </div>
+    </section>
+
+    <section class="page experiences">
+        <h3 class="u-color3 xxl-text centre-text">Education & Work Experience</h3>
+        <div id="experiences" class="row-animate">
+            <div class="education br1rem p2rem mv1rem bg-color4 hidden" style="--order: 0">
+                <div class="front">
+                    <h3 class="head">2018 - <br />2022</h3>
+                    <h3 class="subhead">BTech In <br />Information Technology</h3>
+                    <p>Dr. A.P.J. Adbul Kalam University</p>
+                </div>
+            </div>
+            <div class="experience br1rem p2rem mv1rem bg-color3 hidden" style="--order: 1">
+                <div class="front">
+                    <h3 class="head">Jun 2021 - <br />May 2022</h3>
+                    <h3 class="subhead">Software Engineer Intern</h3>
+                    <p>Novoinvent Software Pvt. Lmt.</p>
+                </div>
+            </div>
+            <div class="experience br1rem p2rem mv1rem bg-color4 hidden" style="--order: 2">
+                <div class="front">
+                    <h3 class="head">May 2022 - <br />Present</h3>
+                    <h3 class="subhead">Software Engineer</h3>
+                    <p>Novoinvent Software Pvt. Lmt.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page skills bg-color1">
+        <h3 class="u-color3 xxl-text">Skills &<br />Services</h3>
+        <div id="skills" class="content-list centre-text row-animate">
+            <div class="skill br1rem p2rem mv1rem bg-color3 hidden" style="--order: 0">
+                <h3 class="head">Front-end development</h3>
+                <ul class="description w80 p1rem br1rem bg-color5 color-list row-list">
+                    <li class="hidden pop" style="--order: 0">HTML5</li>
+                    <li class="hidden pop" style="--order: 1">CSS3</li>
+                    <li class="hidden pop" style="--order: 2">JS</li>
+                    <li class="hidden pop" style="--order: 3">React</li>
+                </ul>
+            </div>
+            <div class="skill br1rem p2rem mv1rem bg-color4 hidden" style="--order: 1">
+                <h3 class="head">Programming Languages</h3>
+                <ul class="description w80 p1rem br1rem bg-color5 color-list row-list">
+                    <li class="hidden pop" style="--order: 0">PHP</li>
+                    <li class="hidden pop" style="--order: 1">JS</li>
+                    <li class="hidden pop" style="--order: 2">Python</li>
+                </ul>
+            </div>
+            <div class="skill br1rem p2rem mv1rem bg-color3 hidden" style="--order: 2">
+                <h3 class="head">Database Management</h3>
+                <ul class="description w80 p1rem br1rem bg-color5 color-list row-list">
+                    <li class="hidden pop" style="--order: 0">MySQL</li>
+                    <li class="hidden pop" style="--order: 1">MongoDB</li>
+                </ul>
+            </div>
+            <div class="skill br1rem p2rem mv1rem bg-color4 hidden" style="--order: 3">
+                <h3 class="head">Back-end Development</h3>
+                <ul class="description w80 p1rem br1rem bg-color5 color-list row-list">
+                    <li class="hidden pop" style="--order: 0">Laravel</li>
+                    <li class="hidden pop" style="--order: 1">WordPress</li>
+                    <li class="hidden pop" style="--order: 2">Node</li>
+                    <li class="hidden pop" style="--order: 3">Express</li>
+                </ul>
+            </div>
+            <div class="skill br1rem p2rem mv1rem bg-color3 hidden" style="--order: 4">
+                <h3 class="head">Other Skills</h3>
+                <ul class="description w80 p1rem br1rem bg-color5 color-list row-list">
+                    <li class="hidden pop" style="--order: 0">Mobile Development: React Native</li>
+                    <li class="hidden pop" style="--order: 1">Version Control: Git</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact dark-text p2rem bg-color15">
+        <div class="bg-color2 w80 br1rem p2rem centre-text">
+            <h4 class="xxl-text">Let's Get in Touch</h4>
+            <div id="social-links">
+                <a href="#" class="my-links"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#" class="my-links"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="#" class="my-links"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const canvas = document.getElementById('backgroundCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Resize canvas to fit window
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        let colors = [
+            '#ff9a9e', '#fad0c4', '#fad0c4', '#fbc2eb', '#a18cd1', '#fbc2eb', 
+            '#b9deed', '#efefbb', '#ffecd2', '#ffd3b5'
+        ];
+
+        function drawBackground(scrollY) {
+            const height = canvas.height;
+            const width = canvas.width;
+
+            // Calculate the index based on scroll position
+            const index = Math.floor((scrollY / document.body.scrollHeight) * colors.length);
+
+            // Clear the canvas
+            ctx.clearRect(0, 0, width, height);
+
+            // Set the background color
+            ctx.fillStyle = colors[index];
+            ctx.fillRect(0, 0, width, height);
+        }
+
+        // Initial drawing
+        drawBackground(window.scrollY);
+
+        // Update on scroll
+        window.addEventListener('scroll', () => {
+            drawBackground(window.scrollY);
+        });
+    </script>
+</body>
+</html>
