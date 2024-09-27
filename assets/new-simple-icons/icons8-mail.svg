@@ -19,9 +19,9 @@
 			r="48"
 			gradientUnits="userSpaceOnUse"
 		>
-			<stop offset="0" stop-color="#14c4ed" />
-			<stop offset=".7" stop-color="#14c4ed" />
-			<stop offset=".8" stop-color="#14c4ed" />
+			<stop offset="0" stop-color="#A2F2D6" />
+			<stop offset=".7" stop-color="#A2F2D6" />
+			<stop offset=".8" stop-color="#A2F2D6" />
 		</radialGradient>
 	<g id="fluent">
 		<path

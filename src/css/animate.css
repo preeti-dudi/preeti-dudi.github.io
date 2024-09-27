@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins: wght@200; 400; 700&family=Kanit&display=swap');
 :root {
-	--color5: #050a30;
+	/* --color5: #050a30; */
+	
+	--color5: #000000;
 	--color6: #e5eaf0;
 	--color2: #e5eaf0;
-	--color4: #ff66c4;
-	--color3: #cb6ce6;
-	/* --color2: #fdcf1c; */
-	--color1: #14c4ed;
+	--color1: #8abdc9;
+	
 	--order: 0;
 }
 * {
@@ -93,6 +93,10 @@ section {
 .wmn-200-wmx-400 {
 	width: clamp(200px, 80%, 400px);
 }
+
+.wmn-200-wmx-300 {
+	width: clamp(200px, 80%, 300px);
+}
 .br50per {
 	border-radius: 50%;
 }
@@ -136,31 +140,7 @@ a {
 	filter: blur(0);
 	transform: translateX(-100%);
 }
-.popup {
-	animation: popup 1s linear 0s infinite alternate-reverse;
-}
 
-@keyframes popup {
-	0% {
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-	}
-	50% {
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-	}
-	100% {
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-		transform: rotate(30deg);
-	}
-}
 .row-animate {
 	display: flex;
 	flex-wrap: wrap;
@@ -177,7 +157,37 @@ a {
 .row-animate :nth-child(n) {
 	transition-delay: calc(var(--order) * 250ms);
 }
+.popup :nth-child(n) {
+	animation: popup 2s linear calc(var(--order) * 250ms) infinite alternate-reverse;
+}
 
+@keyframes popup {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.open :nth-child(n) {
+	animation: open 2s linear calc(var(--order) * 250ms) 3 alternate-reverse;
+}
+
+@keyframes open {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
 .content-list {
 	border-radius: 2%;
 	text-align: center;
@@ -201,7 +211,16 @@ a {
 	display: flex;
 	justify-content: space-around;
 }
+.flex-col{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .flex-1 {
+	flex: 1;
+}
+.flex-2 {
 	flex: 1;
 }
 
@@ -211,9 +230,11 @@ body {
 }
 .bg-color1 {
 	background-color: var(--color1);
+	color: var(--color5);
 }
 .bg-color5 {
 	background-color: var(--color5);
+	color: var(--color1);
 }
 .bg-color2 {
 	background-color: var(--color2);
@@ -234,7 +255,6 @@ body {
 }
 .u-color3 {
 	text-decoration: underline;
-	text-decoration-color: var(--color3);
 }
 .dark-text {
 	color: var(--color5);
