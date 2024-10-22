@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/preeti-dudi.github.io/static/css/main.c9aabc05.css",
-    "main.js": "/preeti-dudi.github.io/static/js/main.3362baed.js",
-    "static/js/453.1900dc01.chunk.js": "/preeti-dudi.github.io/static/js/453.1900dc01.chunk.js",
-    "static/media/hero.png": "/preeti-dudi.github.io/static/media/hero.a4c6dc5934fd4b70b195.png",
-    "index.html": "/preeti-dudi.github.io/index.html",
-    "main.c9aabc05.css.map": "/preeti-dudi.github.io/static/css/main.c9aabc05.css.map",
-    "main.3362baed.js.map": "/preeti-dudi.github.io/static/js/main.3362baed.js.map",
-    "453.1900dc01.chunk.js.map": "/preeti-dudi.github.io/static/js/453.1900dc01.chunk.js.map"
+    "main.css": "/static/css/main.c9aabc05.css",
+    "main.js": "/static/js/main.eb2bd229.js",
+    "static/js/453.1900dc01.chunk.js": "/static/js/453.1900dc01.chunk.js",
+    "static/media/hero.png": "/static/media/hero.a4c6dc5934fd4b70b195.png",
+    "index.html": "/index.html",
+    "main.c9aabc05.css.map": "/static/css/main.c9aabc05.css.map",
+    "main.eb2bd229.js.map": "/static/js/main.eb2bd229.js.map",
+    "453.1900dc01.chunk.js.map": "/static/js/453.1900dc01.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9aabc05.css",
-    "static/js/main.3362baed.js"
+    "static/js/main.eb2bd229.js"
   ]
 }
