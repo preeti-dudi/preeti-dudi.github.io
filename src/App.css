@@ -1,0 +1,178 @@
+/* App.css */
+:root {
+  --primary-color: #1a1a2e;
+  /* A very dark blue for the primary background */
+  --primary-hover: #ff3b3f;
+  /* A bright red-orange for hover effects, keeping it vibrant against dark backgrounds */
+  --secondary-color: #e0e0e0;
+  /* A light grey for primary text, ensuring readability on the dark background */
+
+}
+
+.main {
+  min-height: calc(100vh - 350px);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.route-section {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 1000px;
+  /* border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.hero img {
+  width: calc(100% - 2rem);
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  color: var(--primary-hover);
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+
+.app-button {
+  display: inline-block;
+  margin: 1rem;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  outline: none;
+  border: 0;
+}
+
+.app-button:hover {
+  background: var(--primary-hover);
+}
+
+.footer {
+  min-height: 100px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+}
+
+.flex1{
+  flex: 1;
+}
+
+
+@media (min-width: 768px) {
+  .hidden-on-big {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .small-card-container {
+    grid-template-columns: 2fr;
+  }
+
+  .hidden-on-small {
+    display: none;
+  }
+
+  .hidden-on-big {
+    display: block;
+  }
+
+
+  .route-section {
+    padding: 1rem;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.small-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 1rem;
+  text-align: center;
+}
+
+.small-card {
+  padding: 0.5rem;
+  font-size: small;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.big-icon {
+  font-size: 5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.extra-big-icon {
+  align-self: center;
+  font-size: 5rem;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+.small-icon {
+  font-size: 2rem;
+}
+
+.hidden {
+  display: none;
+}
