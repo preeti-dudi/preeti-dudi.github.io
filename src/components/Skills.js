@@ -3,7 +3,7 @@ import { FaReact, FaNodeJs, FaLaravel, FaJava, FaPhp } from 'react-icons/fa';
 // import './Skills.css';
 import { motion } from 'framer-motion';
 import { SiExpress, SiGit, SiMongodb } from 'react-icons/si';
-import { BsDatabase, BsGit } from 'react-icons/bs';
+import { BsDatabase } from 'react-icons/bs';
 import { TbBrandReactNative } from 'react-icons/tb';
 
 const skills = [

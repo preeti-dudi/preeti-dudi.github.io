@@ -6,7 +6,6 @@ import {
   FaBriefcase,
   FaCode,
   FaProjectDiagram,
-  FaEnvelope,
   FaBars,
   FaTimes
 } from 'react-icons/fa';

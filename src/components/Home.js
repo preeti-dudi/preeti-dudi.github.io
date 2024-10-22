@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import Services from './Services';
 import Hero from './Hero';
 import Skills from './Skills';

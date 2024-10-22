@@ -1,7 +1,6 @@
 import React from 'react'; import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 // import './Contact.css';
-import { motion } from 'framer-motion';
 
 const contact = [
   {

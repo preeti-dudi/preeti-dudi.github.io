@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 // import './Work.css';
 import { TbBrandLaravel, TbBrandReactNative } from "react-icons/tb";
-import { SiMysql, SiPostgresql, SiWordpress, SiPhp, SiJavascript, SiAuthentik } from "react-icons/si";
+import { SiMysql, SiPostgresql, SiWordpress, SiPhp, SiJavascript } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
-import { MdPayment, MdErrorOutline, MdOutlineStorage, MdSchedule, MdGroups, MdOutlineOndemandVideo, MdOutlineDesignServices, MdBugReport, MdCheckCircleOutline, MdOutlineVpnKey, MdOutlineArticle, MdApi, MdQueue } from "react-icons/md";
+import { MdPayment, MdErrorOutline, MdOutlineStorage, MdSchedule, MdGroups, MdOutlineOndemandVideo, MdOutlineDesignServices, MdBugReport, MdCheckCircleOutline, MdOutlineVpnKey, MdApi, MdQueue } from "react-icons/md";
 
 
 
@@ -213,9 +213,9 @@ const Work = () => {
                       ))}
                     </div>
 
-                    <a className='app-button' onClick={(e) => {setSeeMoreIndex(-1) }} >
+                    <button className='app-button' onClick={(e) => {setSeeMoreIndex(-1) }} >
                       View Skills
-                    </a>
+                    </button>
                     </>
   
                     : 
@@ -230,9 +230,9 @@ const Work = () => {
                           skill.text}</motion.div>
                       ))}
                     </div>
-                    <a className='app-button' onClick={(e) => {setSeeMoreIndex((exp_index + '|' + pro_index)) }} >
+                    <button className='app-button' onClick={(e) => {setSeeMoreIndex((exp_index + '|' + pro_index)) }} >
                       View work done
-                    </a>
+                    </button>
                     </>
                   }
 
