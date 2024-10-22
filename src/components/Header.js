@@ -20,11 +20,11 @@ const Header = () => {
   // Define the navigation links with their corresponding icons and paths.
   const navLinks = [
     { to: '/', icon: <FaHome />, text: 'Home' },
-    { to: '/about', icon: <FaUser />, text: 'About' },
     { to: '/work', icon: <FaBriefcase />, text: 'Work' },
     { to: '/services', icon: <FaBriefcase />, text: 'Services' },
     { to: '/skills', icon: <FaCode />, text: 'Skills' },
     { to: '/projects', icon: <FaProjectDiagram />, text: 'Projects' },
+    { to: '/about', icon: <FaUser />, text: 'About' },
   ];
 
   return (
