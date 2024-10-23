@@ -39,12 +39,12 @@ const About = () => (
           {
             index % 2 === 0 ?
               <></> :
-              <div className='extra-big-icon card center-text'>{para.icon}</div>
+              <div className='extra-big-icon hidden-on-small card center-text'>{para.icon}</div>
           }
-          <p className='card'>{para.text}</p>
+          <p className='card'><span className='big-icon hidden-on-big center-text'>{para.icon}<br/></span>{para.text}</p>
           {
             index % 2 === 0 ?
-              <div className='extra-big-icon card center-text'>{para.icon}</div> :
+              <div className='extra-big-icon hidden-on-small card center-text'>{para.icon}</div> :
               <></>
           }
         </div>

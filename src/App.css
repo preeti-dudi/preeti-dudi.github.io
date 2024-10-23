@@ -105,18 +105,13 @@ h2 {
     grid-template-columns: 1fr;
   }
 
-  .small-card-container {
+  .mid-card-container ,.small-card-container {
     grid-template-columns: 2fr;
   }
 
   .hidden-on-small {
     display: none;
   }
-
-  .hidden-on-big {
-    display: block;
-  }
-
 
   .route-section {
     padding: 1rem;
@@ -125,8 +120,21 @@ h2 {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 1.5rem;
+}
+
+.small-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  gap: 1rem;
+  text-align: center;
+}
+.mid-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+  gap: 1rem;
+  text-align: center;
 }
 
 .card {
@@ -136,13 +144,6 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
-}
-
-.small-card-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
-  gap: 1rem;
-  text-align: center;
 }
 
 .small-card {

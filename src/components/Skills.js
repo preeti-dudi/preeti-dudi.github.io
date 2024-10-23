@@ -54,7 +54,7 @@ const Skills = () => (
   <section className="skills">
     <h2>Skills</h2>
     <div
-      className="card-container center-text"
+      className="mid-card-container center-text"
     >
       {skills.map((skill, index) => (
         <motion.div
