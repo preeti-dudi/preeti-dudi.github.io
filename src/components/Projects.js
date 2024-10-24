@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Task Management System",
     description: "Developed a comprehensive task management application featuring intuitive user interfaces and efficient task-tracking functionalities. Integrated a robust back-end using Node.js with TypeScript, providing secure authentication and seamless task CRUD operations.",
-    link: "https://github.com/preeti-dudi/task-manager"
+    link: "https://preeti-dudi.github.io/TaskManagement/"
   },
   {
     title: "BnB Fashions",
