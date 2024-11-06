@@ -2,6 +2,7 @@
 .header {
   padding: 0.5rem 1rem;
   align-items: center;
+  background-color: var(--tertiary-color);
 }
 
 .menu-toggle {
