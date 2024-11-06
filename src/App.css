@@ -1,12 +1,28 @@
 /* App.css */
 :root {
-  --primary-color: #1a1a2e;
-  --tertiary-color: #171718;
-  /* A very dark blue for the primary background */
-  --primary-hover: #ff3b3f;
-  /* A bright red-orange for hover effects, keeping it vibrant against dark backgrounds */
-  --secondary-color: #e0e0e0;
-  /* A light grey for primary text, ensuring readability on the dark background */
+  
+  --primary-color: #1e2a32; /* background - dark teal blue */
+  --tertiary-color: #263238; /* header-footer - charcoal */
+  --primary-hover: #00bfa6; /* hover color - vibrant teal */
+  --secondary-color: #cfd8dc; /* text color - light gray */
+
+  --primary-color: #3b2f2f; /* background - warm dark brown */
+--tertiary-color: #4e342e; /* header-footer - deep burnt umber */
+--primary-hover: #ff6f3c; /* hover color - bright tangerine */
+--secondary-color: #ffddc1; /* text color - warm light cream */
+
+
+--primary-color: #1c2833; /* background - deep navy */
+--tertiary-color: #2a3b4d; /* header-footer - cool slate gray */
+--primary-hover: #5dade2; /* hover color - soft sky blue */
+--secondary-color: #d5dfe5; /* text color - light steel blue */
+
+--primary-color: #0d1b2a; /* background - deep navy */
+--tertiary-color: #1b263b; /* header-footer - dark slate blue */
+--primary-hover: #e63946; /* hover color - bright sunflower yellow */
+--secondary-color: #ffffff; /* text color - pure white */
+
+  
 
 }
 
