@@ -10,8 +10,8 @@ const projects = [
   },
   {
     title: "BnB Fashions",
-    description: "Designed and developed a dynamic e-commerce platform using React, delivering a smooth and engaging user experience. Focused on responsiveness, secure payment integrations, and product management for a seamless online shopping experience.",
-    link: "https://bnbfashions.com"
+    description: "Designed and developed a dummy digital learning platform using React, delivering a smooth and engaging user experience. Focused on responsiveness, modern, and extensive for a seamless user experience.",
+    link: "https://preeti-dudi.github.io/educacy/"
   },
   {
     title: "Personal Portfolio",

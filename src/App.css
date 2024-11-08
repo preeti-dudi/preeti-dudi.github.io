@@ -17,14 +17,19 @@
 --primary-hover: #5dade2; /* hover color - soft sky blue */
 --secondary-color: #d5dfe5; /* text color - light steel blue */
 
+--primary-color: #fff; /* background - deep navy */
+--tertiary-color: #ddbbf1; /* header-footer - dark slate blue */
+--primary-hover: #A100FF; /* hover color - bright sunflower yellow */
+--secondary-color: #000; /* text color - pure white */
+
 --primary-color: #0d1b2a; /* background - deep navy */
 --tertiary-color: #1b263b; /* header-footer - dark slate blue */
 --primary-hover: #e63946; /* hover color - bright sunflower yellow */
 --secondary-color: #ffffff; /* text color - pure white */
 
-  
-
 }
+
+
 
 .main {
   min-height: calc(100vh - 350px);
