@@ -9,9 +9,9 @@ const projects = [
     link: "https://preeti-dudi.github.io/TaskManagement/"
   },
   {
-    title: "BnB Fashions",
+    title: "Educasy",
     description: "Designed and developed a dummy digital learning platform using React, delivering a smooth and engaging user experience. Focused on responsiveness, modern, and extensive for a seamless user experience.",
-    link: "https://preeti-dudi.github.io/educacy/"
+    link: "https://preeti-dudi.github.io/educasy/"
   },
   {
     title: "Personal Portfolio",
