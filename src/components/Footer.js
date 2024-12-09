@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { GoMail } from 'react-icons/go';
 import emailjs from 'emailjs-com';
-import './Footer.css';
 
 const Footer = () => {
   // Define the contact links
@@ -83,7 +82,6 @@ const Footer = () => {
               <span className='link-text'>{contactItem.text}</span>
             </a>
           ))}
-
           </div>
         </div>
 

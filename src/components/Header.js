@@ -9,7 +9,6 @@ import {
   FaBars,
   FaTimes
 } from 'react-icons/fa';
-import './Header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
