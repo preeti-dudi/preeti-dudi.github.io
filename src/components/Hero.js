@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import heroImage from '../assets/hero.png'; // Add your profile or hero image in the assets folder
+import heroImage from '../assets/hero.jpg'; // Add your profile or hero image in the assets folder
 // import './Hero.css';
 
 const Hero = () => (

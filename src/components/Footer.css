@@ -55,7 +55,7 @@ footer {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: var(--secondary-color);
+    color: var(--text-color);
 }
 
 .form-group input,
@@ -63,8 +63,7 @@ footer {
     padding: 10px;
     font-size: 1rem;
     border-radius: 4px;
-    background-color: var(--secondary-color);
-    color: var(--tertiary-color);
+    color: var(--text-color);
 }
 textarea {
     width: calc(100% - 20px);
@@ -79,7 +78,7 @@ textarea {
 
 button[type="submit"] {
     background-color: var(--primary-hover);
-    color: #fff;
+    color: var(--text-color);
     border: none;
     padding: 10px 20px;
     font-size: 1.1rem;
@@ -102,7 +101,7 @@ button[type="submit"]:hover {
 .footer p:last-child {
     font-size: 0.9rem;
     margin-top: 20px;
-    color: var(--secondary-color);
+    color: var(--text-color);
     opacity: 0.8;
 }
 
@@ -115,7 +114,7 @@ button[type="submit"]:hover {
 .footer-link {
     text-decoration: none;
     align-items: center;
-    color: var(--secondary-color);
+    color: var(--text-color);
     padding: 1rem;
     font-size: 1rem;
     border-radius: 0.5rem;

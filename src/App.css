@@ -1,31 +1,32 @@
-/* App.css */
+
+/*App.css */
 :root {
   
-  --primary-color: #1e2a32; /* background - dark teal blue */
-  --tertiary-color: #263238; /* header-footer - charcoal */
-  --primary-hover: #00bfa6; /* hover color - vibrant teal */
-  --secondary-color: #cfd8dc; /* text color - light gray */
+  --primary-color: #1e2a32; 
+  --tertiary-color: #263238; 
+  --primary-hover: #00bfa6; 
+  --text-color: #cfd8dc; 
 
-  --primary-color: #3b2f2f; /* background - warm dark brown */
---tertiary-color: #4e342e; /* header-footer - deep burnt umber */
---primary-hover: #ff6f3c; /* hover color - bright tangerine */
---secondary-color: #ffddc1; /* text color - warm light cream */
+  --primary-color: #3b2f2f; 
+--tertiary-color: #4e342e; 
+--primary-hover: #ff6f3c; 
+--text-color: #ffddc1; 
 
 
---primary-color: #1c2833; /* background - deep navy */
---tertiary-color: #2a3b4d; /* header-footer - cool slate gray */
---primary-hover: #5dade2; /* hover color - soft sky blue */
---secondary-color: #d5dfe5; /* text color - light steel blue */
+--primary-color: #1c2833; 
+--tertiary-color: #2a3b4d; 
+--primary-hover: #5dade2; 
+--text-color: #d5dfe5; 
 
---primary-color: #fff; /* background - deep navy */
---tertiary-color: #ddbbf1; /* header-footer - dark slate blue */
---primary-hover: #A100FF; /* hover color - bright sunflower yellow */
---secondary-color: #000; /* text color - pure white */
+--primary-color: #fff; 
+--tertiary-color: #ddbbf1; 
+--primary-hover: #A100FF; 
+--text-color: #000; 
 
---primary-color: #0d1b2a; /* background - deep navy */
---tertiary-color: #1b263b; /* header-footer - dark slate blue */
---primary-hover: #e63946; /* hover color - bright sunflower yellow */
---secondary-color: #ffffff; /* text color - pure white */
+/* --primary-color: #0d1b2a; 
+--tertiary-color: #1b263b; 
+--primary-hover: #e63946; 
+--text-color: #ffffff;  */
 
 }
 
@@ -40,7 +41,7 @@ body {
   margin: 0;
   padding: 0;
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
@@ -58,7 +59,8 @@ h2 {
   padding: 2rem;
   margin: 1rem auto;
   max-width: 1000px;
-  /* border-radius: 10px;
+  
+/*border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -86,7 +88,7 @@ h2 {
   display: inline-block;
   margin: 1rem;
   background: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--text-color);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -154,8 +156,8 @@ h2 {
 }
 
 .card {
-  background: var(--secondary-color);
-  color: var(--primary-color);
+  border: 1px solid var(--tertiary-color);
+  color: var(--text-color);
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -175,15 +177,13 @@ h2 {
 
 .big-icon {
   font-size: 5rem;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .extra-big-icon {
   align-self: center;
   font-size: 5rem;
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
+  color: var(--text-color);
 }
 
 .small-icon {
