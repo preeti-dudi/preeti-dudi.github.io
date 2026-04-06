@@ -8,53 +8,77 @@ import { TbBrandReactNative } from 'react-icons/tb';
 
 const skills = [
   {
-    icon: <SiMongodb />,
-    text: "Mongo"
+    domain: "Programming Languages",
+    items: ["Python", "C", "MATLAB", "JavaScript", "PHP"]
   },
   {
-    icon: <SiExpress />,
-    text: "Express"
+    domain: "Machine Learning & AI",
+    items: [
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing (NLP)",
+      "Embeddings & Similarity Models",
+      "Reinforcement Learning"
+    ]
   },
   {
-    icon: <FaReact />,
-    text: "React"
+    domain: "Frameworks & Libraries",
+    items: [
+      "PyTorch",
+      "OpenCV",
+      "Hugging Face Transformers"
+    ]
   },
   {
-    icon: <FaNodeJs />,
-    text: "Node.js"
+    domain: "AI Tools & Platforms",
+    items: [
+      "Ollama (LLaMA3)",
+      "Coqui TTS (XTTS-v2)"
+    ]
   },
   {
-    icon: <FaLaravel />,
-    text: "Laravel"
+    domain: "Robotics & Simulation",
+    items: [
+      "ROS2",
+      "Gazebo",
+      "Path Planning",
+      "Kinematics"
+    ]
   },
   {
-    icon: <BsDatabase />,
-    text: "MySQL"
+    domain: "Backend & Systems",
+    items: [
+      "REST APIs",
+      "Database Optimization",
+      "Real-time Data Processing",
+      "Queues & Schedulers",
+      "System Design"
+    ]
   },
   {
-    icon: <TbBrandReactNative />,
-    text: "React Native"
+    domain: "Frontend & Web",
+    items: [
+      "React.js",
+      "HTML",
+      "CSS",
+      "REST API Integration"
+    ]
   },
   {
-    icon: <SiGit />,
-    text: "Git"
-  },
-  {
-    icon: <FaJava />,
-    text: "JavaScript"
-  },
-  {
-    icon: <FaPhp />,
-    text: "PHP"
-  },
-
-];
+    domain: "Tools & Platforms",
+    items: [
+      "Git",
+      "Linux",
+      "Unity (VR)"
+    ]
+  }
+];;
 
 const Skills = () => (
   <section className="skills">
     <h2>Skills</h2>
     <div
-      className="mid-card-container center-text"
+      className="card-container center-text"
     >
       {skills.map((skill, index) => (
         <motion.div
@@ -62,8 +86,8 @@ const Skills = () => (
           animate={{ x: 0, opacity: 1 }}
           transition={{  stiffness: 100, delay: 0.2 * index}}
           key={index} className="card">
-          <span className='big-icon'>{skill.icon}</span>
-          <p>{skill.text}</p>
+          <h3>{skill.domain}</h3>
+          <p>{skill.items.join(', ')}</p>
         </motion.div>
       ))}
     </div>

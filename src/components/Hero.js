@@ -1,7 +1,6 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import heroImage from '../assets/hero.jpg'; // Add your profile or hero image in the assets folder
-// import './Hero.css';
+import React from "react";
+import { motion } from "framer-motion";
+import heroImage from "../assets/hero.jpeg";
 
 const Hero = () => (
   <section className="hero">
@@ -13,19 +12,21 @@ const Hero = () => (
     >
       <img src={heroImage} alt="Preeti" className="hero-image" />
       <div>
-        <h2>Hello, world! 🌍</h2>
-        <p>
+        <h1>Preeti Dudi</h1>
+        <h2>AI/ML Engineer & Robotics Systems Builder</h2>
 
-          I'm Preeti, a full-stack software engineer with a passion for turning complex problems into simple, elegant solutions. Whether I'm coding up sleek apps in React Native or diving deep into the backend with Laravel and Node.js, I’m always on the lookout for my next big challenge.
+        <p>
+          Building intelligent systems with AI, voice interfaces, and real-world
+          applications.
         </p>
+
         <p>
-          When I'm not coding, you’ll probably find me exploring the latest manga, indulging in epic fantasy novels, or dreaming about my next travel adventure. I believe that just like in coding, every journey—whether through a story or a new place—is a chance to learn something new. 💡
-
-
-        </p>
-        <p>
-          Let's connect and build something awesome together! 🚀
-
+          I design and develop <strong>AI-powered systems</strong> combining
+          machine learning, local LLMs, and robotics. With{" "}
+          <strong>4+ years of software engineering experience</strong>, I focus
+          on building 
+          <strong> scalable, real-world solutions</strong> — from voice-enabled
+          assistants to autonomous systems.
         </p>
       </div>
     </motion.div>

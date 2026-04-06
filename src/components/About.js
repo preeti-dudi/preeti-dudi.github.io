@@ -1,7 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { FaLaptopCode, FaBookOpen, FaPlaneDeparture, FaHandshake } from "react-icons/fa";
-
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  FaLaptopCode,
+  FaBookOpen,
+  FaPlaneDeparture,
+  FaHandshake,
+} from "react-icons/fa";
 
 const CanvaEmbed = () => {
   return (
@@ -40,13 +44,44 @@ const CanvaEmbed = () => {
   );
 };
 
-
 const About = () => (
   <section className="about">
-    <h2>About Me</h2>
-    
-      <CanvaEmbed />
 
+    {/* <CanvaEmbed /> */}
+
+    <h2>About Me</h2>
+
+    <p>
+      I am an <strong>AI/ML engineer</strong> with a strong foundation in
+      software engineering and a growing focus on
+      <strong>intelligent systems and robotics</strong>. My work bridges backend
+      systems, machine learning, and real-world deployment, allowing me to build{" "}
+      <strong>end-to-end AI solutions</strong> rather than isolated models.
+    </p>
+
+    <p>
+      I have <strong>4+ years of experience</strong> in backend and full-stack
+      development, and hands-on experience in machine learning, NLP, and
+      reinforcement learning. I have built systems using
+      <strong>local LLMs (LLaMA3)</strong> and{" "}
+      <strong>voice technologies (Coqui TTS)</strong>, focusing on practical and
+      deployable AI applications.
+    </p>
+
+    <p>
+      I am particularly interested in{" "}
+      <strong>robotics, autonomous systems, and AI agents</strong>, and
+      currently pursuing my M.Tech in Automation & Robotics at DIAT.
+    </p>
+
+    <p>
+      I also enjoy{" "}
+      <i>
+        teaching, writing structured notes, and exploring emerging technologies
+      </i>
+      , which helps me continuously improve my understanding and communication
+      of complex concepts.
+    </p>
   </section>
 );
 

@@ -11,168 +11,45 @@ import { MdPayment, MdErrorOutline, MdOutlineStorage, MdSchedule, MdGroups, MdOu
 const work_experience = [
   {
     title: "Software Engineer",
-    company: "Novo Invent Software",
+    company: "Novoinvent Software",
     location: "Noida",
-    duration: "May 2022 – August 2024",
+    duration: "Jun 2022 – Aug 2024",
     projects: [
       {
-        name: "Mobile Account Management Application",
+        name: "Backend Systems & API Development",
         tech_skills: [
-          {
-            icon: <TbBrandLaravel />,
-            text: "Laravel"
-          },
-          {
-            icon: <SiMysql />,
-            text: "MySQL"
-          },
-          {
-            icon: <MdApi />,
-            text: "RESTful APIs"
-          },
-          {
-            icon: <MdPayment />,
-            text: "Payment Gateway Integration"
-          },
-          {
-            icon: <BiCodeCurly />,
-            text: "API Development"
-          },
-          {
-            icon: <MdErrorOutline />,
-            text: "Error Handling"
-          },
-          {
-            icon: <MdOutlineStorage />,
-            text: "Database Optimization"
-          }
+          { icon: <SiJavascript />, text: "JavaScript" },
+          { icon: <SiPhp />, text: "PHP" },
+          { icon: <MdApi />, text: "REST APIs" },
+          { icon: <SiMysql />, text: "Databases" }
         ],
         details: [
-          "Developed backend services using Laravel to support user account management, including authentication, profile updates, and secure data retrieval.",
-          "Integrated third-party payment gateways, ensuring secure transactions and smooth user experiences.",
-          "Designed and optimized database schemas, reducing data retrieval time and improving application performance.",
-          "Implemented error-handling mechanisms and logging to enhance system stability and streamline debugging.",
-          "Collaborated with frontend teams to ensure seamless integration between backend services and mobile application interfaces."
-        ]
-      },
-      {
-        name: "Online Retail Platform",
-        tech_skills: [
-          {
-            icon: <TbBrandLaravel />,
-            text: "Laravel"
-          },
-          {
-            icon: <SiMysql />,
-            text: "MySQL"
-          },
-          {
-            icon: <BiCodeCurly />,
-            text: "API Development"
-          },
-          {
-            icon: <MdQueue />,
-            text: "Automation with Queues"
-          },
-          {
-            icon: <MdSchedule />,
-            text: "Job Scheduling"
-          },
-          {
-            icon: <SiPostgresql />,
-            text: "Database Migrations"
-          },
-          {
-            icon: <MdGroups />,
-            text: "Cross-functional Collaboration"
-          }
-        ],
-        details: [
-          "Developed backend logic for managing product inventory, user authentication, order processing, and payment integration.",
-          "Created automated workflows using scheduled jobs and queues, improving task management and reducing manual intervention.",
-          "Built RESTful API endpoints to facilitate communication between the backend and frontend, ensuring a seamless user experience.",
-          "Managed database operations, including data migrations, schema design, and optimizing SQL queries for better performance.",
-          "Coordinated with cross-functional teams to address technical challenges and ensure timely delivery of project milestones."
+          "Led backend development for scalable applications with focus on performance and reliability.",
+          "Designed REST APIs and optimized database queries for efficient data handling.",
+          "Implemented real-time data processing and automation workflows using queues and schedulers.",
+          "Worked on video/data handling features and system integrations."
         ]
       }
     ]
   },
   {
-    title: "Internship Software Engineer",
-    company: "Novo Invent Software",
-    location: "Noida",
-    duration: "Jan 2021 – May 2022",
+    title: "Software Developer",
+    company: "Kalkine Solutions Pvt Ltd",
+    location: "India",
+    duration: "Mar 2025 – Jul 2025",
     projects: [
       {
-        name: "Educational Mobile Application",
+        name: "Backend Optimization & Data Systems",
         tech_skills: [
-          {
-            icon: <TbBrandReactNative />,
-            text: "React Native"
-          },
-          {
-            icon: <SiJavascript />,
-            text: "JavaScript"
-          },
-          {
-            icon: <MdApi />,
-            text: "API Integration"
-          },
-          {
-            icon: <MdOutlineOndemandVideo />,
-            text: "Video Download and Playback"
-          },
-          {
-            icon: <MdOutlineDesignServices />,
-            text: "Responsive UI Design"
-          },
-          {
-            icon: <MdOutlineVpnKey />,
-            text: "User Authentication"
-          }
+          { icon: <SiJavascript />, text: "JavaScript" },
+          { icon: <MdApi />, text: "REST APIs" },
+          { icon: <SiMysql />, text: "Database Optimization" }
         ],
         details: [
-          "Developed user interfaces using React Native, focusing on delivering a visually appealing and intuitive experience for users.",
-          "Implemented video playback functionality, including features like play, pause, seek, and download, ensuring smooth content delivery.",
-          "Integrated APIs to fetch video content and manage download queues, providing a seamless offline experience for users.",
-          "Collaborated with design teams to translate wireframes into responsive UI components.",
-          "Conducted testing to ensure application stability and identified bugs, contributing to overall product quality."
-        ]
-      },
-      {
-        name: "Financial Services Platform",
-        tech_skills: [
-          {
-            icon: <SiWordpress />,
-            text: "WordPress"
-          },
-          {
-            icon: <SiPhp />,
-            text: "PHP"
-          },
-          {
-            icon: <SiJavascript />,
-            text: "JavaScript"
-          },
-          {
-            icon: <MdApi />,
-            text: "REST APIs"
-          },
-          {
-            icon: <MdCheckCircleOutline />,
-            text: "Quality Assurance"
-          },
-          {
-            icon: <MdBugReport />,
-            text: "Testing and Debugging"
-          }
-        ],
-        details: [
-          "Assisted in the development of a WordPress-based platform, focusing on testing and quality assurance for user-facing features.",
-          "Implemented custom functionalities for the backend, including user authentication and data management.",
-          "Conducted thorough testing of the platform’s functionalities, identifying and resolving critical issues to improve user experience.",
-          "Documented key processes and research findings to facilitate knowledge transfer and support future development efforts.",
-          "Collaborated with backend teams to integrate API endpoints and ensure consistency in data flow between the server and frontend."
+          "Developed and optimized backend systems for high-performance applications.",
+          "Improved system efficiency through caching and database tuning.",
+          "Designed structured data pipelines and logging systems.",
+          "Collaborated on deployment and debugging of production systems."
         ]
       }
     ]

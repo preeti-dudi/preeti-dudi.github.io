@@ -1,22 +1,20 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-// import './Projects.css';
 
 const projects = [
   {
-    title: "Task Management System",
-    description: "Developed a comprehensive task management application featuring intuitive user interfaces and efficient task-tracking functionalities. Integrated a robust back-end using Node.js with TypeScript, providing secure authentication and seamless task CRUD operations.",
-    link: "https://preeti-dudi.github.io/TaskManagement/"
+    title: "Dexa – AI Task Manager with Voice Assistant",
+    description: "Built a local-first AI assistant capable of managing tasks through voice and text interaction. Integrated LLaMA3 via Ollama for offline intelligence and Coqui TTS for natural voice output, enabling a fully functional AI assistant without cloud dependency.",
+    link: "https://github.com/preeti-0001/dexa"
   },
   {
-    title: "Educasy",
-    description: "Designed and developed a dummy digital learning platform using React, delivering a smooth and engaging user experience. Focused on responsiveness, modern, and extensive for a seamless user experience.",
-    link: "https://preeti-dudi.github.io/educasy/"
+    title: "JAM Paper Replication (Just Ask for Music)",
+    description: "Replicated a research paper model for query-based music retrieval using NLP and embedding-based similarity. Trained and evaluated the model, and integrated it into Dexa for real-world usage.",
+    link: ""
   },
   {
-    title: "Personal Portfolio",
-    description: "Created a professional portfolio website using React, highlighting my skills, projects, and work experiences. The site showcases a modern design, animated interactions, and is fully responsive, ensuring an optimal viewing experience on all devices.",
-    link: "https://preeti-dudi.github.io"
+    title: "Cognitive Load Estimation using Pupilometry",
+    description: "Developed a computer vision system using OpenCV to estimate cognitive load based on pupil dynamics under controlled lighting. Implemented detection, segmentation, and feature extraction pipeline for real-time analysis.",
+    link: "https://github.com/preeti-0001/Cognitive-Load-Estimation-using-Red-Light-Pupilometry"
   }
 ];
 
