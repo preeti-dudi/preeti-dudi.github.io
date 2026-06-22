@@ -2,6 +2,7 @@
 
 AI/ML engineer with 4+ years of software engineering experience, building intelligent systems using machine learning, local LLMs, and real-world deployment.
 
+
 ---
 
 ## About Me
@@ -32,6 +33,8 @@ Repo: https://github.com/preeti-0001/dexa
 - Implemented embedding-based similarity matching
 - Trained and evaluated model using PyTorch
 - Integrated model into Dexa
+
+Repo: https://github.com/preeti-0001/jam
 
 ---
 
