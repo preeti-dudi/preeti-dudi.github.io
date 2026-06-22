@@ -145,7 +145,7 @@ export default function KnowledgeGraph() {
       {/* SVG Canvas Workspace (2/3 width) */}
       <div 
         ref={containerRef}
-        className="lg:col-span-2 h-[380px] bg-slate-950/80 border border-slate-900 rounded-lg relative overflow-hidden cursor-grab active:cursor-grabbing select-none"
+        className="lg:col-span-2 top-4 h-[380px] bg-slate-950/80 border border-slate-900 rounded-lg relative overflow-hidden cursor-grab active:cursor-grabbing select-none"
         onMouseDown={handleMouseDownCanvas}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}
